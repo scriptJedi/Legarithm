@@ -82,13 +82,25 @@ p {
   font-weight: 500;
   text-wrap: nowrap;
 
-  img {
+  i {
     transition: .3s all;
   }
 
   &:hover {
-    img {
+    i {
       transform: rotate(45deg);
+    }
+  }
+
+  &:active {
+    transform: scale(.95);
+  }
+
+  &_s {
+    padding: toRem(18) toRem(28);
+    @media (max-width: $mobile) {
+      padding: toRem(15) toRem(20);
+      font-size: toRem(14);
     }
   }
 
@@ -271,131 +283,131 @@ p {
 
 .flex {
   &_1 {
-    flex: 0 0 8.33%;
+    flex: 0 1 8.33%;
   }
 
   &_2 {
-    flex: 0 0 16.66%;
+    flex: 0 1 16.66%;
   }
 
   &_3 {
-    flex: 0 0 25%;
+    flex: 0 1 25%;
   }
 
   &_4 {
-    flex: 0 0 33.33%;
+    flex: 0 1 33.33%;
   }
 
   &_5 {
-    flex: 0 0 41.66%;
+    flex: 0 1 41.66%;
   }
 
   &_6 {
-    flex: 0 0 50%;
+    flex: 0 1 50%;
   }
 
   &_7 {
-    flex: 0 0 58.33%;
+    flex: 0 1 58.33%;
   }
 
   &_8 {
-    flex: 0 0 66.66%;
+    flex: 0 1 66.66%;
   }
 
   &_9 {
-    flex: 0 0 75%;
+    flex: 0 1 75%;
   }
 
   &_10 {
-    flex: 0 0 83.33%;
+    flex: 0 1 83.33%;
   }
 
   &_11 {
-    flex: 0 0 91.66%;
+    flex: 0 1 91.66%;
   }
 
   &_12 {
-    flex: 0 0 100%;
+    flex: 0 1 100%;
   }
 
   @media (min-width: $mobile) {
     &_1_md {
-      flex: 0 0 16.66%;
+      flex: 0 1 16.66%;
     }
     &_2_md {
-      flex: 0 0 33.33%;
+      flex: 0 1 33.33%;
     }
     &_3_md {
-      flex: 0 0 50%;
+      flex: 0 1 50%;
     }
     &_4_md {
-      flex: 0 0 66.66%;
+      flex: 0 1 66.66%;
     }
     &_5_md {
-      flex: 0 0 83.33%;
+      flex: 0 1 83.33%;
     }
     &_6_md {
-      flex: 0 0 100%;
+      flex: 0 1 100%;
     }
   }
 
   @media (min-width: $tablet) {
     &_1_lg {
-      flex: 0 0 8.33%;
+      flex: 0 1 8.33%;
     }
     &_2_lg {
-      flex: 0 0 16.66%;
+      flex: 0 1 16.66%;
     }
     &_3_lg {
-      flex: 0 0 25%;
+      flex: 0 1 25%;
     }
     &_4_lg {
-      flex: 0 0 33.33%;
+      flex: 0 1 33.33%;
     }
     &_5_lg {
-      flex: 0 0 41.66%;
+      flex: 0 1 41.66%;
     }
     &_6_lg {
-      flex: 0 0 50%;
+      flex: 0 1 50%;
     }
   }
 
   @media (min-width: $pc) {
     &_1_xl {
-      flex: 0 0 8.33%;
+      flex: 0 1 8.33%;
     }
     &_2_xl {
-      flex: 0 0 16.66%;
+      flex: 0 1 16.66%;
     }
     &_3_xl {
-      flex: 0 0 25%;
+      flex: 0 1 25%;
     }
     &_4_xl {
-      flex: 0 0 33.33%;
+      flex: 0 1 33.33%;
     }
     &_5_xl {
-      flex: 0 0 41.66%;
+      flex: 0 1 41.66%;
     }
     &_6_xl {
-      flex: 0 0 50%;
+      flex: 0 1 50%;
     }
     &_7_xl {
-      flex: 0 0 58.33%;
+      flex: 0 1 58.33%;
     }
     &_8_xl {
-      flex: 0 0 66.66%;
+      flex: 0 1 66.66%;
     }
     &_9_xl {
-      flex: 0 0 75%;
+      flex: 0 1 75%;
     }
     &_10_xl {
-      flex: 0 0 83.33%;
+      flex: 0 1 83.33%;
     }
     &_11_xl {
-      flex: 0 0 91.66%;
+      flex: 0 1 91.66%;
     }
     &_12_xl {
-      flex: 0 0 100%;
+      flex: 0 1 100%;
     }
   }
 }

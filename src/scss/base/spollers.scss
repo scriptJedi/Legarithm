@@ -25,6 +25,14 @@
   text-align: left;
   position: relative;
   list-style: none;
+  i {
+    font-size: toRem(60);
+    transition: .3s all;
+    color: var(--blue);
+    @media (max-width: $mobile) {
+      font-size: toRem(50);
+    }
+  }
 
   &::marker,
   &::-webkit-details-marker {
@@ -57,7 +65,7 @@
       //&::after {
       //	transform: rotate(40deg);
       //}
-      .spollers__arrow {
+      i {
         transform: rotate(180deg);
       }
     }

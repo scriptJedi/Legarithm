@@ -32,10 +32,10 @@
   &__text {
     display: flex;
     justify-content: space-between;
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       flex-direction: column;
     }
-    @media (min-width: $mobile) {
+    @media (min-width: $tablet) {
       align-items: center;
     }
   }
@@ -59,7 +59,7 @@
     max-width: 490px;
     color: var(--text-secondary);
 
-    @media (min-width: $mobile) {
+    @media (min-width: $tablet) {
       &::before {
         content: '';
         position: absolute;
@@ -71,7 +71,7 @@
       }
     }
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       margin-top: toRem(28);
     }
 
