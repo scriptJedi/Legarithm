@@ -510,6 +510,12 @@
       justify-content: flex-end;
     }
 
+    .flex_8 {
+      display: flex;
+      align-items: center;
+      column-gap: toRem(8);
+    }
+
     p {
       font-size: toRem(12);
       line-height: 1.2;

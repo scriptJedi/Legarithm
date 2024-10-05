@@ -59,8 +59,13 @@
 
   // .header__lang
   &__lang {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--primary);
     column-gap: toRem(5);
+    cursor: pointer;
     @media (max-width: $tablet) {
       margin-top: toRem(20);
       color: var(--text-dark);
@@ -77,6 +82,38 @@
     @media (min-width: $tablet) {
       display: none;
     }
+  }
+}
+
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+.lang-dropdown.active {
+  display: block;
+}
+
+.lang-option {
+  padding: 8px 16px;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.lang-option:hover {
+  background-color: #f5f5f5;
+}
+
+@media (min-width: 992px) {
+  .header__lang:hover .lang-dropdown {
+    display: block;
   }
 }
 

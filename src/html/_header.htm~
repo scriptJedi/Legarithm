@@ -775,7 +775,7 @@ arrow_left_alt
                 </div>
             </nav>
             <div class="header__actions">
-                <div data-da=".menu__list, 991.98" class="header__lang lang">
+                <div data-da=".menu__list, 991.98" class="header__lang">
                     <span class="material-symbols-outlined">language</span>
                     <span class="current-lang">EN</span>
                     <span class="material-symbols-outlined">keyboard_arrow_down</span>

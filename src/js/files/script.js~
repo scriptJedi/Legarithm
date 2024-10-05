@@ -33,59 +33,58 @@ function initMenuFunctionality() {
         }
     }
 
-    function handleBackButton(menu) {
-        if (!menu) return;
-
-        if (menu.classList.contains('menu__subsubmenu')) {
-            menu.classList.remove('_show');
-            activeSubsubmenu = null;
-            removeActiveClassFromAll();
-        } else if (menu.classList.contains('menu__submenu')) {
-            if (activeSubsubmenu) {
-                handleBackButton(activeSubsubmenu);
-            } else {
-                menu.classList.remove('_show');
-                activeSubmenu = null;
-            }
-        }
-    }
-
     function closeMenu(menu, isBackButton = false) {
         if (!menu) return;
 
         if (isMobile.any() && isBackButton) {
-            handleBackButton(menu);
-            return;
-        }
-
-        menu.classList.remove('_show');
-
-        if (isMobile.any()) {
-            if (menu.classList.contains('menu__body')) {
-                if (activeSubsubmenu) {
-                    closeMenu(activeSubsubmenu);
-                }
-                activeSubmenu = null;
-                if (!document.querySelector('.menu__submenu._show') &&
-                    !document.querySelector('.menu__subsubmenu._show')) {
-                    bodyUnlock();
-                    document.documentElement.classList.remove('menu-open');
-                }
-            } else if (menu.classList.contains('menu__subsubmenu')) {
+            // Для мобильной версии при нажатии кнопки back
+            if (menu.classList.contains('menu__subsubmenu')) {
+                // Закрываем только subsubmenu
+                menu.classList.remove('_show');
                 activeSubsubmenu = null;
                 removeActiveClassFromAll();
+            } else if (menu.classList.contains('menu__submenu')) {
+                // Если есть открытое subsubmenu, закрываем только его
+                if (activeSubsubmenu) {
+                    closeMenu(activeSubsubmenu, true);
+                } else {
+                    // Иначе закрываем submenu
+                    menu.classList.remove('_show');
+                    activeSubmenu = null;
+                }
             }
         } else {
-            if (menu.classList.contains('menu__submenu')) {
-                if (activeSubsubmenu) {
-                    closeMenu(activeSubsubmenu);
+            // Стандартное закрытие меню
+            menu.classList.remove('_show');
+
+            if (isMobile.any()) {
+                if (menu.classList.contains('menu__body')) {
+                    if (!isBackButton && activeSubsubmenu) {
+                        closeMenu(activeSubsubmenu);
+                    }
+                    activeSubmenu = null;
+                    if (!isBackButton &&
+                        !document.querySelector('.menu__submenu._show') &&
+                        !document.querySelector('.menu__subsubmenu._show')) {
+                        bodyUnlock();
+                        document.documentElement.classList.remove('menu-open');
+                    }
+                } else if (menu.classList.contains('menu__subsubmenu')) {
+                    activeSubsubmenu = null;
+                    removeActiveClassFromAll();
                 }
-                activeSubmenu = null;
-            } else if (menu.classList.contains('menu__subsubmenu')) {
-                activeSubsubmenu = null;
-                removeActiveClassFromAll();
+            } else {
+                if (menu.classList.contains('menu__submenu')) {
+                    if (activeSubsubmenu) {
+                        closeMenu(activeSubsubmenu);
+                    }
+                    activeSubmenu = null;
+                } else if (menu.classList.contains('menu__subsubmenu')) {
+                    activeSubsubmenu = null;
+                    removeActiveClassFromAll();
+                }
+                updateDesktopMenuOpenClass();
             }
-            updateDesktopMenuOpenClass();
         }
     }
 
@@ -99,7 +98,6 @@ function initMenuFunctionality() {
         removeActiveClassFromAll();
         bodyUnlock();
         document.documentElement.classList.remove('menu-open');
-        iconMenu?.classList.remove('_active');
     }
 
     function openMenu(menu) {
@@ -150,11 +148,12 @@ function initMenuFunctionality() {
             e.stopPropagation();
             const parentMenu = button.closest('.menu__submenu, .menu__subsubmenu');
             if (parentMenu) {
-                handleBackButton(parentMenu);
+                closeMenu(parentMenu, true);
             }
         });
     });
 
+    // Остальные event listeners остаются без изменений
     menuItems.forEach(item => {
         const submenu = item.querySelector('.menu__submenu');
         item?.addEventListener('click', (e) => {
@@ -189,18 +188,23 @@ function initMenuFunctionality() {
             } else {
                 bodyLock();
                 document.documentElement.classList.add('menu-open');
-                this.classList.add('_active');
             }
+            iconMenu.classList.toggle('_active');
         });
     }
 
     document.addEventListener('click', (e) => {
         if (menu && iconMenu && !menu.contains(e.target) && !iconMenu.contains(e.target)) {
-            closeAllMenus();
+            if (isMobile.any()) {
+                closeAllMenus();
+                iconMenu.classList.remove('_active');
+            } else {
+                if (activeSubmenu) closeMenu(activeSubmenu);
+                if (activeSubsubmenu) closeMenu(activeSubsubmenu);
+            }
         }
     });
 }
-
 // Language selector ==================================================================================================================
 function initLangSelector(selector) {
     const langSelector = document.querySelector(selector);

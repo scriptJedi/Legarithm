@@ -114,6 +114,7 @@ section {
 
   &_s {
     padding: toRem(18) toRem(28);
+    font-size: toRem(16);
     @media (max-width: $mobile) {
       padding: toRem(15) toRem(20);
       font-size: toRem(14);
@@ -510,4 +511,97 @@ section {
   height: 9px;
   background-color: rgb(218, 226, 237);
   border-radius: 50%;
+}
+
+.lang {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: toRem(5);
+  cursor: pointer;
+  @media (max-width: $tablet) {
+    column-gap: toRem(2);
+  }
+}
+
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+.lang-dropdown.active {
+  display: block;
+}
+
+.lang-option {
+  padding: 8px 16px;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.lang-option:hover {
+  background-color: #f5f5f5;
+}
+
+@media (min-width: 992px) {
+  .lang:hover .lang-dropdown {
+    display: block;
+  }
+}
+
+.cta {
+  p {
+    margin-top: toRem(30);
+    font-size: toRem(12);
+    color: var(--text-light-grey);
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  // .cta__input-container
+  &__input-container {
+    border: 1px solid rgb(42, 69, 106);
+    border-radius: 8px;
+    display: flex;
+    padding: toRem(6);
+  }
+
+  // .cta__input
+  &__input {
+    color: var(--text-light-grey);
+    padding: toRem(18) toRem(24);
+
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+
+  // .cta__btn
+  &__btn {
+  }
+}
+
+
+.line {
+  height: toEm(1);
+  background-color: #1E3456;
+  width: 100%;
+  margin: toRem(60) 0;
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
