@@ -1,3 +1,114 @@
 //====================================================================================================
+.footer {
+  // .footer__container
+  &__container {
+  }
+
+  // .footer__header
+  &__header {
+  }
+
+  // .footer__logo
+  &__logo {
+  }
+
+  // .footer__lang
+  &__lang {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--primary);
+    column-gap: 0.3125rem;
+    cursor: pointer;
+  }
+
+  // .footer__cta
+  &__cta {
+  }
+
+  // .footer__menu
+  &__menu {
+  }
+
+  // .footer__text
+  &__text {
+  }
+
+  // .footer__link
+  &__link {
+  }
+
+  // .footer__politics
+  &__politics {
+  }
+}
+
+.cta-footer {
+  // .cta-footer__title
+  &__title {
+  }
+
+  // .cta-footer__form
+  &__form {
+  }
+
+  // .cta-footer__input-container
+  &__input-container {
+  }
+
+  // .cta-footer__input
+  &__input {
+  }
+
+  // .cta-footer__btn
+  &__btn {
+  }
+}
+
+.cta {
+  // .cta__input-container
+  &__input-container {
+  }
+
+  // .cta__input
+  &__input {
+  }
+
+  // .cta__btn
+  &__btn {
+  }
+}
+
+
+.line {
+}
+
+.menu-footer {
+  // .menu-footer__body
+  &__body {
+  }
+
+  // .menu-footer__column
+  &__column {
+  }
+
+  // .menu-footer__title
+  &__title {
+  }
+
+  // .menu-footer__list
+  &__list {
+  }
+
+  // .menu-footer__item
+  &__item {
+  }
+
+  // .menu-footer__link
+  &__link {
+  }
+}
+
 
 //====================================================================================================

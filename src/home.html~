@@ -485,10 +485,8 @@
                             </details>
                         </div>
                     </div>
-                    <div class="platform__wrapper col-lg-6">
-                        <div class="platform__image">
-                            <img src="img/platform/02.jpeg" class="ibg" alt="">
-                        </div>
+                    <div class="platform__image col-lg-6">
+                        <img src="img/platform/02.jpeg" class="ibg" alt="">
                     </div>
                 </div>
             </div>

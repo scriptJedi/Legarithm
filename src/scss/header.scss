@@ -65,6 +65,7 @@
     align-items: center;
     color: var(--primary);
     column-gap: toRem(5);
+    cursor: pointer;
     @media (max-width: $tablet) {
       margin-top: toRem(20);
       color: var(--text-dark);
@@ -165,7 +166,6 @@
 .subsubmenu__item {
   width: 100%;
   text-align: left;
-  padding: toRem(14) 0;
   font-size: toRem(14);
   line-height: 1.5;
   font-weight: 500;
@@ -192,6 +192,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: toRem(14) 0;
 }
 
 .submenu__link {

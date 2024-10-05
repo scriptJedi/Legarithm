@@ -374,9 +374,6 @@ section {
     @media (min-width: toEm(1200)) {
       width: toEm(220);
     }
-    @media (min-width: $pc) {
-      width: toEm(260);
-    }
   }
 }
 
