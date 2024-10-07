@@ -17,6 +17,7 @@
 
 // Заголовок спойлера
 .spollers__title {
+  border-top: 1px solid rgb(218, 226, 237);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,6 +26,20 @@
   text-align: left;
   position: relative;
   list-style: none;
+  padding-right: toRem(32);
+  padding-left: toRem(32);
+  @include adaptiveValue("font-size", 40, 24);
+  @include adaptiveValue("padding-top", 50, 28);
+  @include adaptiveValue("padding-bottom", 50, 28);
+  @media (max-width: $mobile) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid rgb(218, 226, 237);
+  }
+
   i {
     font-size: toRem(60);
     transition: .3s all;
@@ -33,6 +48,7 @@
       font-size: toRem(50);
     }
   }
+
 
   &::marker,
   &::-webkit-details-marker {
@@ -108,4 +124,8 @@
 
 // Контент спойлера
 .spollers__body {
+  padding: 0 toRem(32) toRem(32);
+  @media (max-width: $mobile) {
+    padding: 0 0 toRem(20);
+  }
 }

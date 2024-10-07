@@ -1,0 +1,158 @@
+.capabilities {
+  // .capabilities__container
+  &__container {
+  }
+
+  // .capabilities__title
+  &__title {
+  }
+
+  // .capabilities__items
+  &__items {
+  }
+
+  // .capabilities__item
+  &__item {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 100, 60);
+    }
+
+    h3 {
+      line-height: 1.2;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: toRem(30);
+      @include adaptiveValue("font-size", 56, 32);
+    }
+
+    p {
+      font-size: toRem(16);
+      line-height: 1.5;
+      color: var(--text-grey);
+
+      &:not(:last-child) {
+        margin-bottom: toRem(20);
+      }
+    }
+
+    &.row {
+      align-items: center;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+
+  }
+}
+
+.item-capabilities {
+  // .item-capabilities__img
+  &__img {
+    @media (max-width: $mobile) {
+      margin-bottom: toRem(30);
+    }
+  }
+
+  // .item-capabilities__text
+  &__text {
+  }
+}
+
+//==================================================================================================================
+
+.cta {
+  // .cta__bg
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  // .cta__container
+  &__container {
+  }
+
+  // .cta__wrapper
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    h3 {
+      line-height: 1.2;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: toRem(40);
+      color: var(--primary);
+      @include adaptiveValue("font-size", 56, 32);
+    }
+
+    p {
+      font-size: toRem(16);
+      line-height: 1.5;
+      color: var(--primary);
+      margin-top: toRem(40);
+    }
+  }
+
+  // .cta__btn
+  &__btn {
+  }
+}
+
+//==================================================================================================================
+
+
+.faq {
+  // .faq__container
+  &__container {
+  }
+
+  // .faq__wrapper
+  &__wrapper {
+  }
+
+  // .faq__title
+  &__title {
+  }
+}
+
+.faq {
+  // .services__content
+  &__content {
+  }
+
+  // .services__spollers
+  &__spollers {
+  }
+
+  // .services__spoller-item
+  &__spoller-item {
+  }
+
+  // .services__spoller-title
+  &__spoller-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.2;
+    @include adaptiveValue("font-size", 40, 24);
+  }
+
+  // .services__spoller-body
+  &__spoller-body {
+    color: var(--text-grey);
+    font-size: toRem(16);
+    line-height: 1.5;
+    p {
+      &:not(:last-child) {
+        margin-bottom: toRem(20);
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+<body>
+<div class="wrapper">
+    <!--    <style>-->
+    <!--        .header {-->
+    <!--            background-color: #fff;-->
+    <!--            color: #000;-->
+    <!--        }-->
+    <!--        .menu__item {-->
+    <!--            color: #000;-->
+    <!--        }-->
+    <!--        .header__logo svg path {-->
+    <!--            fill: var(&#45;&#45;blue);-->
+    <!--        }-->
+    <!--    </style>-->
+    @@include('html/_header.htm',{})
+    <main class="page">
+        <section class="hero">
+            <div class="hero__bg">
+                <img src="img/hero/hero3.jpg" alt="" class="ibg col-md-6">
+            </div>
+            <div class="hero__container">
+                <div class="hero__wrapper">
+                    <div class="hero__label">
+                        <div class="hero__text">
+                            <h1 class="hero__title">
+                                Legal solutions for IT companies: risk minimization and transparency
+                            </h1>
+                            <div class="hero__actions">
+                                <div class="col-lg-6">
+                                    <div class="hero__descr">
+                                        <h5>
+                                            Comprehensive legal services to enter international markets and protect your
+                                            interests.
+                                        </h5>
+                                    </div>
+                                    <a data-ripple href="#" class="hero__btn btn btn_primary btn_l">
+                                        Contact us
+                                        <i class="material-symbols-outlined">
+                                            north_east
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages section-padding">
+            <div class="advantages__container">
+                <div class="advantages__title title">
+                    <h2>
+                        Our Advantages
+                    </h2>
+                </div>
+                <div class="advantages__items row">
+                    <!--Item-->
+                    <div class="advantages__item item-advantages col-md-4">
+                        <h4 class="item-advantages__title">
+                            Prioritize critical tasks
+                        </h4>
+                        <div class="item-advantages__img">
+                            <img class="ibg--contain" src="img/advantages/01.png" alt="">
+                        </div>
+                        <div class="item-advantages__descr">
+                            <p>
+                                On our portal, you can set priorities for tasks, and we will speed up work on those
+                                tasks that are most urgent for you. Our team works directly through the portal, so tasks
+                                are automatically promoted in the task management system for our employees.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <!--Item-->
+                    <div class="advantages__item item-advantages col-md-4">
+                        <h4 class="item-advantages__title">
+                            Optimize processes
+                        </h4>
+                        <div class="item-advantages__img">
+                            <img class="ibg--contain" src="img/advantages/02.png" alt="">
+                        </div>
+                        <div class="item-advantages__descr">
+                            <p>
+                                We don't just notify you when the service is complete - you'll be kept informed of every
+                                step of the process so you always have an understanding of what's going on. Our
+                                principle of transparency and informing the client about our work is best reflected on
+                                our portal
+                            </p>
+                        </div>
+                    </div>
+                    <!--Item-->
+                    <div class="advantages__item item-advantages col-md-4">
+                        <h4 class="item-advantages__title">
+                            Data protection
+                        </h4>
+                        <div class="item-advantages__img">
+                            <img class="ibg--contain" src="img/advantages/03.png" alt="">
+                        </div>
+                        <div class="item-advantages__descr">
+                            <p>
+                                Communicate digitally while maintaining the same level of confidentiality and security
+                                as with verbal communication. We provide a double level of authentication when logging
+                                in, placement of all documents on secure servers, and an internal security system for
+                                staff.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @@include('html/_contact.htm',{})
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+@@include('html/_js.htm',{})
+</body>
+</html>

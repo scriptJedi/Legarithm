@@ -3,7 +3,22 @@ h1 {
   text-transform: uppercase;
   line-height: 1.04;
   color: var(--text-secondary);
-  @include adaptiveValue("font-size", 96, 54);
+  font-weight: 500;
+  @include adaptiveValue("font-size", 96, 38);
+}
+
+h2 {
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: uppercase;
+  @include adaptiveValue("font-size", 80, 44);
+}
+
+h4 {
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: uppercase;
+  @include adaptiveValue("font-size", 40, 28);
 }
 
 p {
@@ -119,6 +134,10 @@ section {
       padding: toRem(15) toRem(20);
       font-size: toRem(14);
     }
+  }
+
+  &_xl {
+    padding: toRem(28) toRem(36);
   }
 
   &_l {
@@ -399,16 +418,27 @@ section {
       border-radius: 50%;
     }
 
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: -5px;
+      width: 9px;
+      height: 9px;
+      background-color: rgb(218, 226, 237);
+      border-radius: 50%;
+      display: none;
+    }
+
     &:first-child {
       &::after {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: -5px;
-        width: 9px;
-        height: 9px;
-        background-color: rgb(218, 226, 237);
-        border-radius: 50%;
+        display: block;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      &::after {
+        display: block;
       }
     }
   }
