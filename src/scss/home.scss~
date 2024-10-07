@@ -133,7 +133,7 @@
     font-family: $secondFontFamily;
     font-weight: 500;
     font-size: toRem(16);
-    line-height: 1.5;
+    line-height: 1.2;
 
     p {
       color: var(--text-grey);

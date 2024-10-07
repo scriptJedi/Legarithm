@@ -50,11 +50,11 @@
                         About
                     </h4>
                     <div class="about__text col-md-8">
-                        <h5>
+                        <h3>
                             Legarithm is your formula for success. We specialize in <span
                                 class="accent">legal support</span> for international
                             projects and offer ready-made solutions that <span class="accent">meet your goals.</span>
-                        </h5>
+                        </h3>
                         <a data-ripple href="#" class="about__btn btn btn_primary btn_m">
                             About us
                             <i class="material-symbols-outlined">

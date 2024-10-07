@@ -98,9 +98,7 @@ section {
   color: var(--primary);
   padding: 1px;
   border-radius: 5px;
-  @media (min-width: $mobile) {
-    text-wrap: nowrap;
-  }
+  text-wrap: nowrap;
 }
 
 .btn {
