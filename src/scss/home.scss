@@ -292,9 +292,6 @@
     text-transform: uppercase;
     color: var(--text-dark);
     @include adaptiveValue("font-size", 40, 24);
-    @media (max-width: $mobile) {
-      padding: toRem(32) toRem(0);
-    }
 
     &::after, &::before {
       content: '';

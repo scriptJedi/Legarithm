@@ -676,7 +676,7 @@ section {
   &__list {
     display: flex;
     align-items: center;
-    column-gap: toRem(24);
+    column-gap: toRem(12);
   }
 
   // .pagging__item
