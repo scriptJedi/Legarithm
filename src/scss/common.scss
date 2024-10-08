@@ -111,9 +111,9 @@ section {
   font-size: toRem(20);
   color: var(--yellow-white);
   border-radius: toRem(8);
-  transition: .3s all;
   font-weight: 500;
   text-wrap: nowrap;
+  transition: .3s all ease-in-out;
 
   i {
     transition: .3s all;
@@ -179,6 +179,7 @@ section {
   width: toEm(60);
   height: toEm(60);
   border-radius: toRem(8);
+  transition: .3s all ease-in-out;
 
   img {
     width: toEm(24);
@@ -200,6 +201,9 @@ section {
 
   &_secondary {
     background-color: var(--primary);
+  }
+  &_alternative {
+    background-color: #F6F6F6;
   }
 
 }

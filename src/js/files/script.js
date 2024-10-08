@@ -355,9 +355,22 @@ if (spollersArray.length > 0) {
     }
 }
 
+// Counter ==================================================================================================================
+function numberWorkflowItems(itemsSelector, innerSelector) {
+    const items = document.querySelectorAll(itemsSelector);
+
+    items.forEach((item, index) => {
+        const numberSpan = item.querySelector(innerSelector);
+        const number = index + 1;
+        const formattedNumber = number < 10 ? `0${number}.` : `${number}.`;
+        numberSpan.textContent = formattedNumber;
+    });
+}
+
 // Initialization ===================================================================================================================
 document.addEventListener('DOMContentLoaded', () => {
     initMenuFunctionality();
+    numberWorkflowItems('.workflow__item', '.item-workflow__numb span');
     initLangSelector('.header__lang');
     initLangSelector('.footer__lang');
 });
