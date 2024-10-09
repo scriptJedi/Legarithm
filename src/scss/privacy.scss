@@ -1,0 +1,67 @@
+.privacy {
+  margin-top: toRem(40);
+  // .privacy__container
+  &__container {
+  }
+
+  // .privacy__wrapper
+  &__wrapper {
+  }
+
+  // .privacy__label
+  &__label {
+  }
+
+  // .privacy__title
+  &__title {
+  }
+
+  // .privacy__content
+  &__content {
+    @media (max-width: $tablet) {
+      margin-top: toRem(40);
+    }
+    h5 {
+      font-size: toRem(28);
+      font-weight: 500;
+      line-height: 1.2;
+      color: var(--text-dark);
+      margin-top: toRem(40);
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: toRem(25);
+      font-size: toRem(16);
+      color: var(--text-grey);
+      line-height: 1.5;
+      font-weight: 500;
+    }
+
+    ul {
+      margin-top: toRem(40);
+      li {
+        position: relative;
+        margin-left: toRem(20);
+        color: var(--text-grey);
+        line-height: 1.5;
+        font-size: toRem(16);
+
+        &:not(:last-child) {
+          margin-bottom: toRem(20);
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 8px;
+          left: -20px;
+          width: 9px;
+          height: 9px;
+          background-color: var(--blue);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

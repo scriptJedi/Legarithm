@@ -11,7 +11,7 @@ h2 {
   line-height: 1.2;
   font-weight: 500;
   text-transform: uppercase;
-  @include adaptiveValue("font-size", 80, 44);
+  @include adaptiveValue("font-size", 75, 40);
 }
 
 h4 {
@@ -676,7 +676,7 @@ section {
   &__list {
     display: flex;
     align-items: center;
-    column-gap: toRem(12);
+    column-gap: toRem(24);
   }
 
   // .pagging__item

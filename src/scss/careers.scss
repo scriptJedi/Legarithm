@@ -1,0 +1,120 @@
+.careers {
+  margin-top: toRem(20);
+  // .careers__container
+  &__container {
+  }
+
+  // .careers__wrapper
+  &__wrapper {
+  }
+
+  // .careers__label
+  &__label {
+    h2 {
+      margin-bottom: toRem(40);
+      @media (max-width: $tablet) {
+        margin-bottom: toRem(20);
+      }
+    }
+
+    p {
+      font-size: toRem(16);
+      line-height: 1.5;
+      color: var(--text-grey);
+    }
+
+    @media (max-width: $tablet) {
+      margin-bottom: toRem(40);
+    }
+  }
+
+  // .careers__title
+  &__title {
+  }
+
+  // .careers__content
+  &__content {
+  }
+
+  // .careers__spollers
+  &__spollers {
+  }
+}
+
+.spollers-careers {
+  // .spollers-careers__item
+  &__item {
+  }
+
+  // .spollers-careers__title
+  &__title {
+    text-transform: uppercase;
+    padding-top: toRem(25);
+    padding-bottom: toRem(25);
+
+    &:last-of-type {
+      border-bottom: 1px solid rgb(218, 226, 237);
+    }
+  }
+
+  // .spollers-careers__body
+  &__body {
+    padding-top: 2rem;
+  }
+
+  // .spollers-careers__wrapper
+  &__wrapper {
+    font-family: $secondFontFamily;
+
+    p {
+      font-size: toRem(14);
+      line-height: 1.5;
+      color: var(--text-grey);
+
+      &:not(:last-child) {
+        margin-bottom: toRem(40);
+      }
+    }
+
+    ul {
+      margin-bottom: toRem(40);
+
+      li {
+        position: relative;
+        margin-left: toRem(20);
+        color: var(--text-grey);
+        line-height: 1.5;
+        font-size: toRem(16);
+
+        &:not(:last-child) {
+          margin-bottom: toRem(20);
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 8px;
+          left: -20px;
+          width: 9px;
+          height: 9px;
+          background-color: var(--blue);
+          border-radius: 50%;
+        }
+      }
+    }
+
+    h5 {
+      font-family: $fontFamily;
+      margin-bottom: toRem(40);
+      color: var(--text-dark);
+      text-transform: uppercase;
+      line-height: 1.2;
+      font-weight: 500;
+      @include adaptiveValue("font-size", 28, 24);
+    }
+  }
+
+  // .spollers-careers__btn
+  &__btn {
+  }
+}

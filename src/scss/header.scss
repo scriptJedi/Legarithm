@@ -18,6 +18,9 @@
     }
     .menu__item {
       color: var(--text-primary);
+      &:before {
+        background-color: var(--text-primary);
+      }
     }
     .header__lang {
       color: var(--text-primary);
