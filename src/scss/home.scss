@@ -367,6 +367,17 @@
   // .publication__container
   &__container {
   }
+  &__filters {
+    margin-bottom: toRem(40);
+  }
+
+  &__filter {
+    @media (max-width: $mobile) {
+        &:not(:last-child) {
+          margin-bottom: toRem(10);
+        }
+    }
+  }
 
   // .publication__btn
   &__btn {

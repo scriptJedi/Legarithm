@@ -4,7 +4,25 @@
   top: 0;
   left: 0;
   z-index: 100;
-  padding: toRem(28) 0;
+  padding: toRem(16) 0;
+
+  &_alternative {
+    background-color: #fff;
+    border-bottom: 1px solid var(--dash-white);
+    .header__logo {
+      svg {
+        path {
+          fill: var(--blue);
+        }
+      }
+    }
+    .menu__item {
+      color: var(--text-primary);
+    }
+    .header__lang {
+      color: var(--text-primary);
+    }
+  }
 
   &__overlay {
     opacity: 0;
@@ -30,7 +48,7 @@
   &__logo {
     padding-right: toRem(10);
 
-    img {
+    img, svg {
       width: 100%;
     }
   }

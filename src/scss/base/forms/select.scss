@@ -11,27 +11,31 @@
 	&__title {
 		color: inherit;
 		text-align: left;
-		border: 1px solid #d9d9d9;
+		border: 1px solid var(--dash-white);
 		background-color: #fff;
 		cursor: pointer;
 		width: 100%;
 		border-radius: 4px;
+		line-height: 1.5;
 	}
 	// .select__value
 	&__value {
+		font-weight: 500;
+		font-size: toRem(16);
 		display: flex;
 		min-width: 0;
 		align-items: center;
-		height: toRem(30);
-		padding: 0 toRem(15);
+		//height: toRem(70);
+		padding: toRem(24);
 		gap: toRem(10);
 		> * {
 			flex: 1 1 auto;
 		}
 		&:after {
 			content: "";
+			background-image: url(img/icons/select_arrow.svg);
 			align-self: stretch;
-			flex: 0 0 10px;
+			flex: 0 0 20px;
 			transition: all 0.3s ease 0s;
 			display: flex;
 			justify-content: center;
@@ -75,7 +79,6 @@
 		min-width: 100%;
 		left: 0;
 		background-color: #fff;
-		border-top: 0;
 		border: 1px solid #d9d9d9;
 		border-top: 0;
 		padding: 10px 0px 5px 0px;
@@ -99,14 +102,19 @@
 		text-align: left;
 		cursor: pointer;
 		padding: 5px 15px;
-		color: inherit;
+		color: var(--text-grey);
+		font-size: toRem(20);
+		line-height: 1.5;
+		border-top: 1px solid var(--dash-white);
 		&._select-selected {
-			background-color: #eee;
+			background-color: var(--dash-white);
 		}
 		@media (any-hover: hover) {
 			&:hover {
 				background: #d9d9d9;
 			}
+		}
+		@media (max-width: $mobile) {
 		}
 	}
 

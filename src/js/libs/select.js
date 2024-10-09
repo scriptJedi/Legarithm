@@ -502,13 +502,13 @@ class SelectConstructor {
 			formValidate.validateInput(originalSelect);
 		}
 		// При зміні селекту надсилаємо форму
-		if (originalSelect.hasAttribute('data-submit') && originalSelect.value) {
-			let tempButton = document.createElement("button");
-			tempButton.type = "submit";
-			originalSelect.closest('form').append(tempButton);
-			tempButton.click();
-			tempButton.remove();
-		}
+		// if (originalSelect.hasAttribute('data-submit') && originalSelect.value) {
+		// 	let tempButton = document.createElement("button");
+		// 	tempButton.type = "submit";
+		// 	originalSelect.closest('form').append(tempButton);
+		// 	tempButton.click();
+		// 	tempButton.remove();
+		// }
 		const selectItem = originalSelect.parentElement;
 		// Виклик коллбек функції
 		this.selectCallback(selectItem, originalSelect);

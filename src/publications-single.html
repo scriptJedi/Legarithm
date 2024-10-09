@@ -1,12 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/_head.htm',{
-"title":"HomePage"
+"title":"Publication single"
 })
 <body>
 <div class="wrapper">
     @@include('html/_header.htm',{})
     <main class="page">
+        <section class="publication">
+            <div class="publication__container">
+                <div class="row">
+                    <div data-da=".publication__social, 991.98" class="publication__sidebar col-12 col-lg-2">
+                        <p>Share to</p>
+                        <div class="publication__share share">
+                            <a href="#" class="share__item social-btn social-btn_alternative">
+                                <svg width="18.857422" height="15.428711" viewBox="0 0 18.8574 15.4287" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs/>
+                                    <path id="telegram"
+                                          d="M1.29 6.64C6.35 4.46 9.73 3.02 11.42 2.33C16.24 0.35 17.24 0.01 17.89 0C18.04 -0.01 18.36 0.03 18.57 0.19C18.74 0.34 18.79 0.53 18.81 0.66C18.84 0.79 18.87 1.1 18.84 1.33C18.58 4.04 17.45 10.62 16.88 13.66C16.63 14.94 16.15 15.37 15.69 15.42C14.68 15.51 13.92 14.76 12.94 14.13C11.41 13.14 10.55 12.52 9.06 11.56C7.35 10.44 8.46 9.83 9.44 8.83C9.69 8.56 14.14 4.57 14.22 4.21C14.23 4.17 14.24 4 14.14 3.91C14.04 3.82 13.89 3.85 13.78 3.87C13.63 3.91 11.19 5.5 6.46 8.65C5.77 9.12 5.14 9.35 4.58 9.34C3.95 9.33 2.76 8.99 1.88 8.71C0.79 8.36 -0.08 8.18 0 7.58C0.04 7.28 0.47 6.96 1.29 6.64Z"
+                                          fill="#232323" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="share__item social-btn social-btn_alternative">
+                                <svg width="20.571289" height="18.856934" viewBox="0 0 20.5713 18.8569" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs/>
+                                    <path id="path1009"
+                                          d="M0.04 0L7.99 10.4L0 18.85L1.79 18.85L8.79 11.45L14.45 18.85L20.57 18.85L12.18 7.87L19.62 0L17.82 0L11.37 6.81L6.17 0L0.05 0L0.04 0ZM2.69 1.29L5.5 1.29L17.92 17.55L15.11 17.55L2.69 1.29Z"
+                                          fill="#232323" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="share__item social-btn social-btn_alternative">
+                                <svg width="26.000000" height="26.000000" viewBox="0 0 26 26" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs/>
+                                    <path id="linkedin"
+                                          d="M5.84 26L0.32 26L0.32 8.61L5.84 8.61L5.84 26ZM3.08 6.17C1.3 6.17 0 4.87 0 3.08C0 1.29 1.46 0 3.08 0C4.87 0 6.17 1.29 6.17 3.08C6.17 4.87 4.87 6.17 3.08 6.17ZM26 26L20.47 26L20.47 16.57C20.47 13.81 19.33 13 17.71 13C16.08 13 14.46 14.29 14.46 16.73L14.46 26L8.93 26L8.93 8.61L14.13 8.61L14.13 11.04C14.62 9.91 16.57 8.12 19.33 8.12C22.42 8.12 25.67 9.91 25.67 15.27L25.67 26L26 26Z"
+                                          fill="#232323" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="share__item social-btn social-btn_alternative">
+                                <svg width="15.000000" height="28.000000" viewBox="0 0 15 28" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                    <defs/>
+                                    <path id="Vector"
+                                          d="M10.05 6.3L10.05 10.25L14.99 10.25L14.21 15.57L10.05 15.57L10.05 27.82C9.21 27.94 8.36 28 7.49 28C6.49 28 5.51 27.92 4.56 27.76L4.56 15.57L0 15.57L0 10.25L4.56 10.25L4.56 5.42C4.56 2.43 7.01 0 10.05 0L10.05 0C10.06 0 10.07 0 10.08 0L15 0L15 4.59L11.78 4.59C10.83 4.59 10.05 5.36 10.05 6.3L10.05 6.3Z"
+                                          fill="#232323" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="share__item social-btn social-btn_alternative">
+                                <svg width="19.500000" height="15.500000" viewBox="0 0 19.5 15.5" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs/>
+                                    <path id="Vector"
+                                          d="M0.75 3.95C0.75 2.83 0.75 2.26 0.96 1.84C1.16 1.46 1.46 1.15 1.84 0.96C2.26 0.75 2.83 0.75 3.95 0.75L15.54 0.75C16.66 0.75 17.22 0.75 17.65 0.96C18.03 1.15 18.34 1.46 18.53 1.84C18.75 2.26 18.75 2.82 18.75 3.94L18.75 11.55C18.75 12.67 18.75 13.23 18.53 13.65C18.34 14.03 18.03 14.34 17.65 14.53C17.23 14.75 16.67 14.75 15.55 14.75L3.94 14.75C2.82 14.75 2.26 14.75 1.84 14.53C1.46 14.34 1.16 14.03 0.96 13.65C0.75 13.23 0.75 12.67 0.75 11.55L0.75 3.95ZM2.25 2.25L7.85 6.36L7.85 6.36C8.53 6.86 8.87 7.1 9.24 7.2C9.57 7.29 9.92 7.29 10.25 7.2C10.62 7.1 10.96 6.86 11.64 6.36L17.25 2.25"
+                                          stroke="#232323" stroke-opacity="1.000000" stroke-width="1.500000"
+                                          stroke-linejoin="round" stroke-linecap="round"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="share__item social-btn social-btn_alternative">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.51894 11.48C9.95061 12.9117 12.2718 12.9117 13.7035 11.4801L17.4067 7.77681C18.8384 6.34514 18.8384 4.02394 17.4067 2.59227C15.9751 1.1606 13.6539 1.1606 12.2222 2.59227L10.3706 4.44389"
+                                          stroke="#232323" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M11.4791 8.51738C10.0474 7.08571 7.72624 7.08571 6.29457 8.51738L2.59133 12.2206C1.15965 13.6523 1.15965 15.9735 2.59132 17.4052C4.023 18.8368 6.34419 18.8368 7.77586 17.4052L9.62749 15.5535"
+                                          stroke="#232323" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <article class="publication__article col-12 col-md-10">
+                        <div class="publication__head">
+                            <div class="publication__tags aic">
+                                <a href="#" class="tag">
+                                    29 July 2024
+                                </a>
+                                <a href="#" class="tag">
+                                    Finance
+                                </a>
+                            </div>
+                            <h1 class="publication__title">
+                                Peculiarities of obtaining a gambling license in the Philippines
+                            </h1>
+                            <div class="publication__info">
+                                <div class="publication__person">
+                                    <img src="img/publications/v1.jpg" alt="">
+                                    <span>
+                                    Vladyslav Drapii
+                                </span>
+                                </div>
+                                <span class="publication__readTime">
+                                5 min
+                            </span>
+                            </div>
+                            <div class="publication__social"></div>
+                        </div>
+
+                        <div class="publication__body">
+                            <p>
+                                As the Curacao iGaming landscape is shifting, new licenses, such as Anjouan Gaming
+                                license and Tobique Gaming license have successfully entered the market. At the same
+                                time, other countries and regulatory authorities have decided to introduce new licenses
+                                that may be of interest to prospective and current operators. So what do we know about
+                                the Vanuatu and Timor-Leste Gaming licenses?
+                            </p>
+                            <h3>
+                                Vanuatu Gaming License
+                            </h3>
+                            <p>
+                                Vanuatu, known for forex licenses and citizenship by investment programs, has unveiled a
+                                modernized licensing framework with a strong focus on digitalization. The Vanuatu Gaming
+                                Authority (VGA), launched updated regulations under the Vanuatu Interactive Gaming Act,
+                                replacing outdated laws dating back to 1993.
+                            </p>
+                            <p>
+                                The new regulations aim to attract operators targeting unregulated markets, offering a
+                                streamlined online application process overseen by the VGA. This digital portal promises
+                                faster processing times while ensuring thorough background checks for all applicants.
+                            </p>
+                            <p>
+                                Key features of the updated license include a EUR5,000 ($5,370) application fee, an
+                                annual license fee of EUR10,000 ($10,700), valid for 15 years from issuance, and a flat
+                                1 percent tax on Gross Gaming Revenue.
+                            </p>
+                            <p>
+                                The Vanuatu Department of Customs and Inland Revenue serves as the gambling regulator,
+                                with VGA Limited processing applications through a public-private partnership.
+                            </p>
+                            <p>
+                                Initially catering to B2C operators, each license allows for two URLs, with options to
+                                add more for a fee, similar to practices in jurisdictions like the Isle of Man. License
+                                holders must ensure all White Label partners comply with regulatory standards.
+                            </p>
+                            <p>
+                                The application process prioritizes quality submissions, advancing eligible applications
+                                while providing feedback for improvement if needed. Processing is set to commence in
+                                early July, reflecting Vanuatu’s ambition to reaffirm its status as a leading and
+                                trustworthy eGaming jurisdiction amid evolving global standards.
+                            </p>
+                            <h3>
+                                Core Requirements for Licensing
+                            </h3>
+                            <p>
+                                In collaboration with the Vanuatu Department of Customs and Inland Revenue (VDCIR), the
+                                licensing requirements strike a balance between stringent regulation and operational
+                                ease. Key prerequisites include:
+                            </p>
+                            <ul>
+                                <li>
+                                    Due Diligence on Ultimate Beneficial Owners (UBOs): Applicants must provide proof of
+                                    identity and address for UBOs, along with an explanation of their sources of wealth.
+                                </li>
+                                <li>
+                                    Corporate Structure Transparency: Detailed due diligence on all associated entities
+                                    and holding structures is mandatory.
+                                </li>
+                                <li>
+                                    Financial Accountability: Submission of a business plan outlining operational
+                                    strategies and financial statements demonstrating the project’s funding sources.
+                                </li>
+                                <li>
+                                    Compliance Measures: Adoption of robust anti-money laundering and counter-financing
+                                    of terrorism (AML/CFT) policies and procedures.
+                                </li>
+                            </ul>
+                            <h3>
+                                Timor-Leste Gaming Licens
+                            </h3>
+                            <p>
+                                Timor-Leste is emerging as a promising hub for iGaming licensing and professional
+                                services with the establishment of the Virtual Gaming Association (VGA). This initiative
+                                represents a significant advancement for the country.
+                            </p>
+                            <p>
+                                Members of the VGA attended the SiGMA tradeshow in Malta, however, specific details
+                                about the Timor-Leste gaming license, such as application procedures, fees, and
+                                regulatory requirements, are not yet widely detailed or standardized.
+                            </p>
+                            <p>
+                                Timor-Leste, also known as East Timor, is a sovereign nation located in Southeast Asia.
+                                It occupies the eastern half of the island of Timor, along with the nearby islands of
+                                <a href="#">Atauro</a> and <a href="#">Jaco</a>, and the enclave of Ambeno within
+                                Indonesian West Timor. It gained
+                                independence in 2002 after a period of Indonesian occupation and a transitional
+                                administration overseen by the United Nations.
+                            </p>
+                            <p>
+                                We will monitor any updates from the Virtual Gaming Association to provide our clients
+                                with the most recent developments.
+                            </p>
+                            <img src="img/publications/01.jpeg" alt="">
+                            <h3>
+                                Timor-Leste Gaming Licens
+                            </h3>
+                            <ol>
+                                <li>
+                                    <h5>
+                                        Timor-Leste Gaming Licens
+                                    </h5>
+                                    <p>
+                                        Due Diligence on Ultimate Beneficial Owners (UBOs): Applicants must provide
+                                        proof of identity and address for UBOs, along with an explanation of their
+                                        sources of wealth.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5>
+                                        Timor-Leste Gaming Licens
+                                    </h5>
+                                    <p>
+                                        Due Diligence on Ultimate Beneficial Owners (UBOs): Applicants must provide
+                                        proof of identity and address for UBOs, along with an explanation of their
+                                        sources of wealth.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5>
+                                        Timor-Leste Gaming Licens
+                                    </h5>
+                                    <p>
+                                        Due Diligence on Ultimate Beneficial Owners (UBOs): Applicants must provide
+                                        proof of identity and address for UBOs, along with an explanation of their
+                                        sources of wealth.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5>
+                                        Timor-Leste Gaming Licens
+                                    </h5>
+                                    <p>
+                                        Due Diligence on Ultimate Beneficial Owners (UBOs): Applicants must provide
+                                        proof of identity and address for UBOs, along with an explanation of their
+                                        sources of wealth.
+                                    </p>
+                                </li>
+                            </ol>
+                            <blockquote>
+                                <q>
+                                    imor-Leste is emerging as a promising hub for iGaming licensing and professional
+                                    services with the establishment of the Virtual Gaming Association (VGA). This
+                                    initiative represents a significant advancement for the country.
+                                </q>
+                            </blockquote>
+                            <h3>
+                                Timor-Leste Gaming Licens
+                            </h3>
+                            <ol>
+                                <li>
+                                    Due Diligence on Ultimate Beneficial Owners (UBOs): Applicants must provide
+                                    proof of identity and address for UBOs, along with an explanation of their
+                                    sources of wealth.
+                                </li>
+                                <li>
+                                    Due Diligence on Ultimate Beneficial Owners (UBOs): Applicants must provide
+                                    proof of identity and address for UBOs, along with an explanation of their
+                                    sources of wealth.
+                                </li>
+                                <li>
+                                    Due Diligence on Ultimate Beneficial Owners (UBOs): Applicants must provide
+                                    proof of identity and address for UBOs, along with an explanation of their
+                                    sources of wealth.
+                                </li>
+                                <li>
+                                    Due Diligence on Ultimate Beneficial Owners (UBOs): Applicants must provide
+                                    proof of identity and address for UBOs, along with an explanation of their
+                                    sources of wealth.
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="publication section-padding">
+            <div class="publication__container">
+                <div class="publication__row row aifs jcsb">
+                    <!--Item-->
+                    <div class="publication__big-item publication-item_big col-md-6">
+                        <img src="img/publications/01.jpeg" alt="" class="publication-item__img ibg">
+                        <div class="publication-item__tags aic">
+                            <a href="#" class="tag">
+                                29 July 2024
+                            </a>
+                            <a href="#" class="tag">
+                                Finance
+                            </a>
+                        </div>
+                        <h3>
+                            Where is the best place to register a Start-Up?
+                        </h3>
+                        <p>
+                            In this article, we will look at the most popular jurisdictions for registering
+                            startups,
+                            their advantages and disadvantages, as well as the key ...
+                        </p>
+                        <a href="#" class="publication__btn btn btn_secondary btn_m">
+                            Read more
+                            <i class="material-symbols-outlined">
+                                north_east
+                            </i>
+                        </a>
+                    </div>
+                    <!--Item-->
+                    <div class="publication__big-item publication-item_big col-md-6">
+                        <img src="img/publications/p1.jpeg" alt="" class="publication-item__img ibg">
+                        <div class="publication-item__tags aic">
+                            <a href="#" class="tag">
+                                29 July 2024
+                            </a>
+                            <a href="#" class="tag">
+                                Finance
+                            </a>
+                        </div>
+                        <h3>
+                            Where is the best place to register a Start-Up?
+                        </h3>
+                        <p>
+                            In this article, we will look at the most popular jurisdictions for registering
+                            startups,
+                            their advantages and disadvantages, as well as the key ...
+                        </p>
+                        <a href="#" class="publication__btn btn btn_secondary btn_m">
+                            Read more
+                            <i class="material-symbols-outlined">
+                                north_east
+                            </i>
+                        </a>
+                    </div>
+                    <!--Item-->
+                    <div class="publication__big-item publication-item_big col-md-6">
+                        <img src="img/publications/p2.jpeg" alt="" class="publication-item__img ibg">
+                        <div class="publication-item__tags aic">
+                            <a href="#" class="tag">
+                                29 July 2024
+                            </a>
+                            <a href="#" class="tag">
+                                Finance
+                            </a>
+                        </div>
+                        <h3>
+                            Where is the best place to register a Start-Up?
+                        </h3>
+                        <p>
+                            In this article, we will look at the most popular jurisdictions for registering
+                            startups,
+                            their advantages and disadvantages, as well as the key ...
+                        </p>
+                        <a href="#" class="publication__btn btn btn_secondary btn_m">
+                            Read more
+                            <i class="material-symbols-outlined">
+                                north_east
+                            </i>
+                        </a>
+                    </div>
+                    <!--Item-->
+                    <div class="publication__big-item publication-item_big col-md-6">
+                        <img src="img/publications/p3.jpeg" alt="" class="publication-item__img ibg">
+                        <div class="publication-item__tags aic">
+                            <a href="#" class="tag">
+                                29 July 2024
+                            </a>
+                            <a href="#" class="tag">
+                                Finance
+                            </a>
+                        </div>
+                        <h3>
+                            Where is the best place to register a Start-Up?
+                        </h3>
+                        <p>
+                            In this article, we will look at the most popular jurisdictions for registering
+                            startups,
+                            their advantages and disadvantages, as well as the key ...
+                        </p>
+                        <a href="#" class="publication__btn btn btn_secondary btn_m">
+                            Read more
+                            <i class="material-symbols-outlined">
+                                north_east
+                            </i>
+                        </a>
+                    </div>
+                    <!--Item-->
+                    <div class="publication__big-item publication-item_big col-md-6">
+                        <img src="img/publications/p4.jpeg" alt="" class="publication-item__img ibg">
+                        <div class="publication-item__tags aic">
+                            <a href="#" class="tag">
+                                29 July 2024
+                            </a>
+                            <a href="#" class="tag">
+                                Finance
+                            </a>
+                        </div>
+                        <h3>
+                            Where is the best place to register a Start-Up?
+                        </h3>
+                        <p>
+                            In this article, we will look at the most popular jurisdictions for registering
+                            startups,
+                            their advantages and disadvantages, as well as the key ...
+                        </p>
+                        <a href="#" class="publication__btn btn btn_secondary btn_m">
+                            Read more
+                            <i class="material-symbols-outlined">
+                                north_east
+                            </i>
+                        </a>
+                    </div>
+                    <!--Item-->
+                    <div class="publication__big-item publication-item_big col-md-6">
+                        <img src="img/publications/p5.jpeg" alt="" class="publication-item__img ibg">
+                        <div class="publication-item__tags aic">
+                            <a href="#" class="tag">
+                                29 July 2024
+                            </a>
+                            <a href="#" class="tag">
+                                Finance
+                            </a>
+                        </div>
+                        <h3>
+                            Where is the best place to register a Start-Up?
+                        </h3>
+                        <p>
+                            In this article, we will look at the most popular jurisdictions for registering
+                            startups,
+                            their advantages and disadvantages, as well as the key ...
+                        </p>
+                        <a href="#" class="publication__btn btn btn_secondary btn_m">
+                            Read more
+                            <i class="material-symbols-outlined">
+                                north_east
+                            </i>
+                        </a>
+                    </div>
+                    <!--Item-->
+                    <div class="publication__big-item publication-item_big col-md-6">
+                        <img src="img/publications/p5.jpeg" alt="" class="publication-item__img ibg">
+                        <div class="publication-item__tags aic">
+                            <a href="#" class="tag">
+                                29 July 2024
+                            </a>
+                            <a href="#" class="tag">
+                                Finance
+                            </a>
+                        </div>
+                        <h3>
+                            Where is the best place to register a Start-Up?
+                        </h3>
+                        <p>
+                            In this article, we will look at the most popular jurisdictions for registering
+                            startups,
+                            their advantages and disadvantages, as well as the key ...
+                        </p>
+                        <a href="#" class="publication__btn btn btn_secondary btn_m">
+                            Read more
+                            <i class="material-symbols-outlined">
+                                north_east
+                            </i>
+                        </a>
+                    </div>
+                    <!--Item-->
+                    <div class="publication__big-item publication-item_big col-md-6">
+                        <img src="img/publications/p6.jpeg" alt="" class="publication-item__img ibg">
+                        <div class="publication-item__tags aic">
+                            <a href="#" class="tag">
+                                29 July 2024
+                            </a>
+                            <a href="#" class="tag">
+                                Finance
+                            </a>
+                        </div>
+                        <h3>
+                            Where is the best place to register a Start-Up?
+                        </h3>
+                        <p>
+                            In this article, we will look at the most popular jurisdictions for registering
+                            startups,
+                            their advantages and disadvantages, as well as the key ...
+                        </p>
+                        <a href="#" class="publication__btn btn btn_secondary btn_m">
+                            Read more
+                            <i class="material-symbols-outlined">
+                                north_east
+                            </i>
+                        </a>
+                    </div>
+                    @@include('html/_pagging.htm',{})
+                </div>
+            </div>
+        </section>
         @@include('html/_contact.htm',{})
     </main>
     @@include('html/_footer.htm',{})
