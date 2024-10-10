@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/_head.htm',{
-"title":"HomePage"
+"title":"404 - Page Not Found"
 })
 <body>
 <div class="wrapper">
     @@include('html/_header.htm',{})
     <main class="page">
-        @@include('html/_contact.htm',{})
+        <section class="error-page section-padding">
+            <div class="error-page__wrapper">
+                <div class="error-page__container">
+                    <div class="error-page__content">
+                        <h1 class="error-page__code">404</h1>
+                        <p class="error-page__message">Oops, there was an error, go back to the main page</p>
+                        <a data-ripple href="index.html" class="cta__btn btn btn_primary btn_l">
+                            To homepage
+                            <i class="material-symbols-outlined">
+                                north_east
+                            </i>
+                        </a>
+                    </div>
+                    <div class="error-page__buildings">
+                        <img data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" src="img/404/01.jpeg" alt="Building 1"
+                             class="error-page__building error-page__building--1">
+                        <img data-prlx-mouse data-prlx-cx="30" data-prlx-cy="30" src="img/404/02.jpeg" alt="Building 2"
+                             class="error-page__building error-page__building--2">
+                        <img data-prlx-mouse data-prlx-cx="60" data-prlx-cy="60" src="img/404/03.jpeg" alt="Building 3"
+                             class="error-page__building error-page__building--3">
+                        <img data-prlx-mouse data-prlx-cx="50" data-prlx-cy="50" src="img/404/04.jpeg" alt="Building 4"
+                             class="error-page__building error-page__building--4">
+                        <img data-prlx-mouse data-prlx-cx="90" data-prlx-cy="90" src="img/404/05.jpeg" alt="Building 5"
+                             class="error-page__building error-page__building--5">
+                        <img data-prlx-mouse data-prlx-cx="20" data-prlx-cy="20" src="img/404/06.jpeg" alt="Building 6"
+                             class="error-page__building error-page__building--6">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     @@include('html/_footer.htm',{})
 </div>
