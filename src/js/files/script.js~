@@ -389,9 +389,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initLangSelector('.header__lang');
     initLangSelector('.footer__lang');
     numberItems(
-        '.strengths',
-        '.item-strengths',
-        '.item-strengths__number',
+        '.advantages',
+        '.item-advantages',
+        '.item-advantages__number',
         true,  // use parentheses
         false  // don't use dot
     );

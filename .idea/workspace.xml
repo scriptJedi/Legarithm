@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96c0750c-87d4-4f5a-908b-686fc379d759" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scss/careers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/contact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/privacy.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/jurisdictions.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/careers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/careers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/privacy.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/privacy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/files/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jurisdictions.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/jurisdictions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/menu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +67,8 @@
       <updated>1728024472732</updated>
       <workItem from="1728024474006" duration="18966000" />
       <workItem from="1728283457160" duration="6741000" />
-      <workItem from="1728490688994" duration="4829000" />
+      <workItem from="1728490688994" duration="5168000" />
+      <workItem from="1728573542912" duration="5277000" />
     </task>
     <servers />
   </component>
