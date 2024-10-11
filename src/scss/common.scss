@@ -103,6 +103,32 @@ section {
   }
 }
 
+.link_hover {
+  @media (min-width: $tablet) {
+    position: relative;
+    line-height: 1.7;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background-color: var(--blue);
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+    }
+
+    &:hover::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+  }
+}
+
 .btn {
   display: inline-flex;
   justify-content: center;
@@ -120,6 +146,7 @@ section {
   }
 
   &:hover {
+    box-shadow: var(--btn-hover-shadows);
     i {
       transform: rotate(45deg);
     }
@@ -181,15 +208,31 @@ section {
   border-radius: toRem(8);
   transition: .3s all ease-in-out;
 
-  img {
+  &:hover {
+    box-shadow: var(--btn-hover-shadows);
+
+    img, svg {
+      scale: (1.2);
+    }
+  }
+
+  &:active {
+    transform: scale(.95);
+    img, svg {
+      scale: (1);
+    }
+  }
+
+  img, svg {
     width: toEm(24);
     height: toEm(24);
+    transition: .3s all;
   }
 
   @media (max-width: $mobile) {
     width: toEm(48);
     height: toEm(48);
-    img {
+    img, svg {
       width: toEm(20);
       height: toEm(20);
     }
@@ -667,6 +710,7 @@ section {
   &__arrow {
     font-size: toRem(16);
     color: var(--blue);
+
     &:disabled {
       opacity: .3;
     }
@@ -683,6 +727,7 @@ section {
   &__item {
     font-weight: 500;
     font-size: toRem(28);
+
     &._active {
       color: var(--blue);
     }

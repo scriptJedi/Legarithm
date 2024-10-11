@@ -6,9 +6,12 @@
   z-index: 100;
   padding: toRem(16) 0;
 
-  &_alternative {
+  &._header-scroll {
+    position: fixed;
+    top: -200%;
     background-color: #fff;
     border-bottom: 1px solid var(--dash-white);
+
     .header__logo {
       svg {
         path {
@@ -16,12 +19,33 @@
         }
       }
     }
+  }
+
+  &._header-show {
+    transition: top .3s ease 0s;
+    top: 0;
+  }
+
+  &_alternative {
+    background-color: #fff;
+    border-bottom: 1px solid var(--dash-white);
+
+    .header__logo {
+      svg {
+        path {
+          fill: var(--blue);
+        }
+      }
+    }
+
     .menu__item {
       color: var(--text-primary);
+
       &:before {
         background-color: var(--text-primary);
       }
     }
+
     .header__lang {
       color: var(--text-primary);
     }
