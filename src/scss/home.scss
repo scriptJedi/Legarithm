@@ -382,6 +382,9 @@
   // .publication__btn
   &__btn {
     margin-top: toRem(30);
+    &:hover {
+      box-shadow: none;
+    }
   }
 
   // .publication__row
