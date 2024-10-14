@@ -383,15 +383,61 @@ function numberItems(sectionSelector, itemsSelector, innerSelector, useParenthes
     }
 }
 
+// Progress line ==================================================================================================================
+function initializeProgressTracking(containerSelector, progressLineSelector, options = {}) {
+    const container = document.querySelector(containerSelector);
+    const progressLine = document.querySelector(progressLineSelector);
+    const steps = container.querySelectorAll('.company-start__step');
+
+    if (!container || !progressLine || steps.length === 0) {
+        return;
+    }
+
+    // Default options
+    const defaultOptions = {
+        startOffset: 0.3, // Start progress when the container is 50% in view by default
+        endOffset: 0.6 // End progress when the container is fully scrolled out of view
+    };
+
+    // Merge default options with user-provided options
+    const settings = {...defaultOptions, ...options};
+
+    function updateProgress() {
+        const containerRect = container.getBoundingClientRect();
+        const containerTop = containerRect.top;
+        const containerHeight = containerRect.height;
+        const windowHeight = window.innerHeight;
+
+        // Calculate the progress
+        let progress;
+        const startPoint = windowHeight * (1 - settings.startOffset);
+        const endPoint = -containerHeight * settings.endOffset;
+
+        if (containerTop > startPoint) {
+            progress = 0;
+        } else if (containerTop < endPoint) {
+            progress = 100;
+        } else {
+            progress = ((startPoint - containerTop) / (startPoint - endPoint)) * 100;
+        }
+        
+        progressLine.style.setProperty('--progress', `${progress}%`);
+    }
+
+    window.addEventListener('scroll', updateProgress);
+    window.addEventListener('resize', updateProgress);
+    updateProgress();
+}
+
 // Initialization ===================================================================================================================
 document.addEventListener('DOMContentLoaded', () => {
     initMenuFunctionality();
     initLangSelector('.header__lang');
     initLangSelector('.footer__lang');
     numberItems(
-        '.advantages',
-        '.item-advantages',
-        '.item-advantages__number',
+        '.strengths',
+        '.item-strengths',
+        '.item-strengths__number',
         true,  // use parentheses
         false  // don't use dot
     );
@@ -402,5 +448,20 @@ document.addEventListener('DOMContentLoaded', () => {
         false,  // don't use parentheses
         true    // use dot
     );
+    numberItems(
+        '.requirements',
+        '.item-requirements',
+        '.item-requirements__number',
+        true,
+        false
+    );
+    numberItems(
+        '.start-company',
+        '.company-start__step',
+        '.company-start__step-number',
+        false,
+        false
+    );
+    initializeProgressTracking('.company-start__steps', '.company-start__progress-line');
 
 });

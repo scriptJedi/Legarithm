@@ -5,10 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96c0750c-87d4-4f5a-908b-686fc379d759" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/cms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/cms.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/publications.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/careers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/careers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_popup.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_popup.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/files/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/files/tippy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/tippy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/popup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/careers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/careers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/jurisdictions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/jurisdictions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/libs/tippy.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/libs/tippy.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +81,7 @@
       <workItem from="1728490688994" duration="5168000" />
       <workItem from="1728573542912" duration="5374000" />
       <workItem from="1728582528202" duration="2994000" />
+      <workItem from="1728917859797" duration="9077000" />
     </task>
     <servers />
   </component>

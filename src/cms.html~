@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"CMS"
+})
+<body>
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+        <section class="hero hero_alternative">
+            <div class="hero__container col-lg-6">
+                <div class="hero__wrapper">
+                    <div class="hero__label">
+                        <div class="hero__text">
+                            <h1 class="hero__title">
+                                Company registration in Cyprus
+                            </h1>
+                            <div class="hero__actions">
+                                <div class="hero__descr">
+                                    <h5>
+                                        We have successfully registered more than 40 companies remotely. Get a company
+                                        with a team of local experts who will provide full service for your business.
+                                    </h5>
+                                </div>
+                                <a data-ripple href="#" class="hero__btn btn btn_primary btn_l">
+                                    Register now
+                                    <i class="material-symbols-outlined">
+                                        north_east
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__bg col-lg-6">
+                <img src="img/hero/hero6.jpeg" alt="" class="ibg">
+            </div>
+        </section>
+        <section class="why-legarithm section-padding">
+            <div class="why-legarithm__container">
+                <div class="row">
+                    <div class="why-legarithm__title title">
+                        <h2>
+                            Why legarithm
+                        </h2>
+                    </div>
+                    <div class="why-legarithm__features">
+                            <span class="why-legarithm__feature"
+                                  data-tippy-content="Our team consists of experienced legal professionals">PROFESSIONAL TEAM OF LAWYERS</span>
+                        <span class="why-legarithm__feature"
+                              data-tippy-content="We ensure your information is kept private and secure">CONFIDENTIALITY</span>
+                        <span class="why-legarithm__feature"
+                              data-tippy-content="Transparent pricing with no unexpected charges">NO HIDDEN FEES</span>
+                        <span class="why-legarithm__feature"
+                              data-tippy-content="Quick turnaround times for all our services">SPEED OF SERVICE DELIVERY</span>
+                        <span class="why-legarithm__feature"
+                              data-tippy-content="Easy online registration process accessible from anywhere">REGISTER ONLINE FROM ANYWHERE</span>
+                        <span class="why-legarithm__feature"
+                              data-tippy-content="Full range of legal services for your business needs">COMPREHENSIVE SERVICE FOR YOUR BUSINESS</span>
+                        <span class="why-legarithm__feature why-legarithm__feature_accent"
+                              data-tippy-content="Full range of legal services for your business needs">And more</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="strengths section-padding">
+            <div class="strengths__container">
+
+                <div class="strengths__wrapper row">
+                    <!-- Left column -->
+                    <div class="strengths__column strengths__column_l col-md-6">
+                        <div class="strengths__title">
+                            <h3>
+                                advantages of a company in Cyprus
+                            </h3>
+                        </div>
+                        <div class="strengths__item item-strengths">
+                            <span class="item-strengths__number"></span>
+                            <h3 class="item-strengths__title">
+                                TAX OPTIMIZATION
+                            </h3>
+                            <div class="item-strengths__content">
+                                <p>
+                                    After receiving the IP-Box, it is possible to reduce the tax rate to 2.5%.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="strengths__item item-strengths">
+                            <span class="item-strengths__number"></span>
+                            <h3 class="item-strengths__title">
+                                TAXATION
+                            </h3>
+                            <div class="item-strengths__content">
+                                <p>
+                                    The corporate tax rate is 12.5%; the VAT rate is 19%;
+                                </p>
+                            </div>
+                        </div>
+                        <div class="strengths__item item-strengths">
+                            <span class="item-strengths__number"></span>
+                            <h3 class="item-strengths__title">
+                                REPORTING
+                            </h3>
+                            <div class="item-strengths__content">
+                                <p>
+                                    Easy in terms of administration
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right column -->
+                    <div class="strengths__column strengths__column_r col-md-6">
+                        <div class="strengths__item item-strengths">
+                            <span class="item-strengths__number"></span>
+                            <h3 class="item-strengths__title">
+                                COMPANY REGISTRATION PERIOD
+                            </h3>
+                            <div class="item-strengths__content">
+                                <p>
+                                    3-4 weeks, there is a possibility of an accelerated company registration procedure.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="strengths__item item-strengths">
+                            <span class="item-strengths__number"></span>
+                            <h3 class="item-strengths__title">
+                                REGISTRATION REMOTELY
+                            </h3>
+                            <div class="item-strengths__content">
+                                <p>You can register a company from anywhere in the world</p>
+                            </div>
+                        </div>
+                        <div class="strengths__item item-strengths">
+                            <span class="item-strengths__number"></span>
+                            <h3 class="item-strengths__title">
+                                AUTHORIZED CAPITAL
+                            </h3>
+                            <div class="item-strengths__content">
+                                <p>
+                                    The minimum authorized capital is set at 1000 euros.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="strengths__item item-strengths item-strengths_last">
+                            <div class="item-strengths__content">
+                                <div class="item-strengths__cta row">
+                                    <p class="col-lg-6">Do you want to open a company in Cyprus?</p>
+                                    <a data-ripple href="#" class="cta__btn btn btn_primary btn_m col-lg-6">
+                                        Contact us
+                                        <i class="material-symbols-outlined">
+                                            north_east
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="requirements section-padding">
+            <div class="requirements__container">
+                <div class="requirements__title title row aifs">
+                    <span class="section-tag col-md-4">
+                        Requirements
+                    </span>
+                    <h3 class="col-md-8">
+                        What are the requirements to register a company in Cyprus?
+                    </h3>
+                </div>
+                <div class="requirements__content">
+                    <div class="requirements__item item-requirements">
+                        <div class="item-requirements__number col-lg-1"></div>
+                        <div class="item-requirements__img col-lg-2">
+                            <img class="ibg--contain" src="img/requirements/01.png" alt=""/>
+                        </div>
+                        <div class="item-requirements__title col-lg-5">
+                            <h5>
+                                Corporate secretary
+                            </h5>
+                        </div>
+                        <div class="item-requirements__descr col-lg-4">
+                            <p>
+                                The law requires that every company has a secretary. This officer is responsible for
+                                compliance with legal requirements. He or she files annual returns and resolutions on
+                                changes, prepares the annual general meeting, and also deals with the distribution of
+                                dividends
+                            </p>
+                        </div>
+                    </div>
+                    <div class="requirements__item item-requirements">
+                        <div class="item-requirements__number col-lg-1"></div>
+                        <div class="item-requirements__img col-lg-2">
+                            <img class="ibg--contain" src="img/requirements/02.png" alt=""/>
+                        </div>
+                        <div class="item-requirements__title col-lg-5">
+                            <h5>
+                                Director/nominee director
+                            </h5>
+                        </div>
+                        <div class="item-requirements__descr col-lg-4">
+                            <p>
+                                At least one of your directors must be a resident. Hiring a nominee director is a common
+                                and legal practice. A nominee director puts his or her name on your documents but cannot
+                                make any key business decisions. In the event of any wrongdoing, such as late or
+                                incorrect reporting, the nominee director shares the legal responsibility. That is why
+                                you should get an accounting package with this service.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="requirements__item item-requirements">
+                        <div class="item-requirements__number col-lg-1"></div>
+                        <div class="item-requirements__img col-lg-2">
+                            <img class="ibg--contain" src="img/requirements/03.png" alt=""/>
+                        </div>
+                        <div class="item-requirements__title col-lg-5">
+                            <h5>
+                                Legal address
+                            </h5>
+                        </div>
+                        <div class="item-requirements__descr col-lg-4">
+                            <p>
+                                All companies must have a local registered address. It is indicated on all legal
+                                documents. We receive your correspondence, scan it and forward it to you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="start-company section-padding">
+            <div class="start-company__container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="title">
+                            <h3 class="start-company__title">5 STEPS TO START<br>A COMPANY</h3>
+                        </div>
+                        <a data-da=".start-company__container, 767.98" href="#"
+                           class="start-company__btn btn btn_primary btn_l btn_w100">Contact us
+                            <i class="material-symbols-outlined">
+                                north_east
+                            </i>
+                        </a>
+                        <div class="start-company__img">
+                            <img class="ibg--contain" src="img/start/01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="company-start">
+                            <div class="company-start__steps">
+                                <div class="company-start__progress-line"></div>
+                                <div class="company-start__step">
+                                    <div class="company-start__step-wrapper">
+                                        <div class="company-start__step-number">1</div>
+                                        <h2 class="company-start__step-title">COMPLIANCE CHECK</h2>
+                                        <div class="company-start__step-content">
+                                            <p>We need the following documents from all directors, shareholders and
+                                                beneficial owners to begin:</p>
+                                            <ul>
+                                                <li>Notarised copy of valid passport</li>
+                                                <li>Notarized copy of the second identity document</li>
+                                                <li>Certified copy of utility bill</li>
+                                                <li>Certified copy of bank statement</li>
+                                                <li>Your CV/Resume</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="company-start__step" data-step="2">
+                                    <div class="company-start__step-wrapper">
+                                        <div class="company-start__step-number">2</div>
+                                        <h2 class="company-start__step-title">SUBMITTING A NAME FOR APPROVAL</h2>
+                                        <div class="company-start__step-content">
+                                            <p>
+                                                We will verify the name's approval with the registrar and proceed with
+                                                submitting the application
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="company-start__step">
+                                    <div class="company-start__step-wrapper">
+                                        <div class="company-start__step-number">3</div>
+                                        <h2 class="company-start__step-title">SUBMISSION OF DOCUMENTS</h2>
+                                        <div class="company-start__step-content">
+                                            <ul>
+                                                <li>We'll prepare and submit all the documents that the Registrar of
+                                                    Companies requires
+                                                </li>
+                                                <li>Company's M & AA</li>
+                                                <li>HE1 HE2, HE3 forms</li>
+                                                <li>Appointment/acceptance letters, first minutes and resolutions
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="company-start__step">
+                                    <div class="company-start__step-wrapper">
+                                        <div class="company-start__step-number">4</div>
+                                        <h2 class="company-start__step-title">REGISTRATION</h2>
+                                        <div class="company-start__step-content">
+                                            <p>We will submit the necessary documents, and once approved, you'll
+                                                receive
+                                                a
+                                                complete set of company certificates with an apostille. After that,
+                                                we
+                                                can
+                                                assist with registering you for VAT obligations.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @@include('html/_contact.htm',{})
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+@@include('html/_js.htm',{})
+</body>
+</html>

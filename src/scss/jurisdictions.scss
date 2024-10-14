@@ -92,6 +92,12 @@
     }
   }
 
+  &__title {
+    font-weight: 500;
+    text-transform: uppercase;
+    @include adaptiveValue("font-size", 56, 32);
+  }
+
   &__column {
     display: flex;
     flex-direction: column;
@@ -128,9 +134,6 @@
     margin-bottom: toRem(80);
     line-height: 1.5;
     @include adaptiveValue("font-size", 32, 28);
-    @media (max-width: 767px) {
-      font-size: 20px;
-    }
   }
 
   &__content {

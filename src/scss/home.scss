@@ -3,6 +3,65 @@
   width: 100vw;
   height: 100vh;
 
+  &_alternative {
+    display: flex;
+    @media (max-width: $tablet) {
+      flex-direction: column-reverse;
+    }
+
+    .hero__bg {
+      position: relative;
+    }
+
+    .hero__container {
+      @media (min-width: $tablet) {
+        width: 50%;
+        height: auto;
+      }
+    }
+
+    .hero__wrapper {
+      width: auto;
+      align-items: center;
+      @media (max-width: $tablet) {
+        display: block;
+        margin-top: toRem(30);
+      }
+    }
+
+    .hero__label {
+      margin-bottom: 0;
+    }
+
+    .hero__actions {
+      display: block;
+      margin-top: toRem(30);
+    }
+
+    .hero__title {
+      color: var(--text-dark);
+      line-height: 1.2;
+      font-weight: 500;
+      @include adaptiveValue("font-size", 56, 32);
+    }
+
+    .hero__descr {
+      font-size: toRem(16);
+      color: var(--text-grey);
+      line-height: 1.5;
+      h5 {
+        font-family: $secondFontFamily;
+        text-transform: none;
+      }
+    }
+
+    .hero__btn {
+      @media (max-width: $mobile) {
+        width: 100%;
+      }
+    }
+  }
+
   &__bg {
     position: absolute;
     inset: 0;
@@ -367,21 +426,23 @@
   // .publication__container
   &__container {
   }
+
   &__filters {
     margin-bottom: toRem(40);
   }
 
   &__filter {
     @media (max-width: $mobile) {
-        &:not(:last-child) {
-          margin-bottom: toRem(10);
-        }
+      &:not(:last-child) {
+        margin-bottom: toRem(10);
+      }
     }
   }
 
   // .publication__btn
   &__btn {
     margin-top: toRem(30);
+
     &:hover {
       box-shadow: none;
     }

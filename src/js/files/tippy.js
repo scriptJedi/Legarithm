@@ -1,7 +1,7 @@
 // Підключення функціоналу "Чертоги Фрілансера"
-import { isMobile, FLS } from "./functions.js";
+import {isMobile, FLS} from "./functions.js";
 // Підключення списку активних модулів
-import { flsModules } from "./modules.js";
+import {flsModules} from "./modules.js";
 
 // Підключення з node_modules
 import tippy from 'tippy.js';
@@ -12,6 +12,4 @@ import "../../scss/libs/tippy.scss";
 //import 'tippy.js/dist/tippy.css';
 
 // Запускаємо та додаємо в об'єкт модулів
-flsModules.tippy = tippy('[data-tippy-content]', {
-
-});
+flsModules.tippy = tippy('[data-tippy-content]', {});

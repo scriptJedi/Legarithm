@@ -78,6 +78,13 @@ section {
     @include adaptiveValue("font-size", 80, 40);
   }
 
+  h3 {
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    @include adaptiveValue("font-size", 56, 32);
+  }
+
   &_btn {
     display: flex;
     justify-content: space-between;

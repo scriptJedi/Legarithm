@@ -5,25 +5,10 @@
 })
 <body>
 <div class="wrapper">
-    <!--    <style>-->
-    <!--        .header {-->
-    <!--            background-color: #fff;-->
-    <!--            color: #000;-->
-    <!--        }-->
-    <!--        .menu__item {-->
-    <!--            color: #000;-->
-    <!--        }-->
-    <!--        .header__logo svg path {-->
-    <!--            fill: var(&#45;&#45;blue);-->
-    <!--        }-->
-    <!--    </style>-->
     @@include('html/_header.htm',{})
     <main class="page">
-        <section class="hero">
-            <div class="hero__bg">
-                <img src="img/hero/hero3.jpg" alt="" class="ibg col-md-6">
-            </div>
-            <div class="hero__container">
+        <section class="hero hero_alternative">
+            <div class="hero__container col-lg-6">
                 <div class="hero__wrapper">
                     <div class="hero__label">
                         <div class="hero__text">
@@ -31,24 +16,25 @@
                                 Legal solutions for IT companies: risk minimization and transparency
                             </h1>
                             <div class="hero__actions">
-                                <div class="col-lg-6">
-                                    <div class="hero__descr">
-                                        <h5>
-                                            Comprehensive legal services to enter international markets and protect your
-                                            interests.
-                                        </h5>
-                                    </div>
-                                    <a data-ripple href="#" class="hero__btn btn btn_primary btn_l">
-                                        Contact us
-                                        <i class="material-symbols-outlined">
-                                            north_east
-                                        </i>
-                                    </a>
+                                <div class="hero__descr">
+                                    <h5>
+                                        Comprehensive legal services to enter international markets and protect your
+                                        interests.
+                                    </h5>
                                 </div>
+                                <a data-ripple href="#" class="hero__btn btn btn_primary btn_l">
+                                    Contact us
+                                    <i class="material-symbols-outlined">
+                                        north_east
+                                    </i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="hero__bg col-lg-6">
+                <img src="img/hero/hero3.jpg" alt="" class="ibg">
             </div>
         </section>
         <section class="advantages section-padding">

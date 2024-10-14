@@ -1,7 +1,15 @@
 .careers {
   margin-top: toRem(20);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   // .careers__container
   &__container {
+    margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   // .careers__wrapper
@@ -30,6 +38,11 @@
 
   // .careers__title
   &__title {
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    color: var(--text-primary);
+    @include adaptiveValue("font-size", 80, 40);
   }
 
   // .careers__content
@@ -38,6 +51,21 @@
 
   // .careers__spollers
   &__spollers {
+  }
+
+  &__empty {
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h5 {
+      font-size: toRem(28);
+      line-height: 1.5;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
   }
 }
 
