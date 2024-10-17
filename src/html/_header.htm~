@@ -396,7 +396,7 @@ arrow_left_alt
                         </ul>
                     </li>
                     <li class="menu__item menu__item_submenu">
-                        <a href="#" class="menu__link link_hover">Jurisdictions
+                        <a href="#" class="menu__link link_hover">Services
                             <span class="mobile_arrow material-symbols-outlined">arrow_right_alt</span>
                         </a>
                         <ul class="menu__submenu">

@@ -116,6 +116,16 @@
 
   // .faq__wrapper
   &__wrapper {
+    .col-lg-6 {
+      .ibg {
+        flex-grow: 1;
+        width: 100%;
+        height: auto;
+        @media (max-width: $mobile) {
+          display: none;
+        }
+      }
+    }
   }
 
   // .faq__title
@@ -136,12 +146,18 @@
   &__spoller-item {
   }
 
+  &__img {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
   // .services__spoller-title
   &__spoller-title {
     text-transform: uppercase;
     font-weight: 500;
     line-height: 1.2;
-    @include adaptiveValue("font-size", 40, 24);
+    @include adaptiveValue("font-size", 28, 24);
   }
 
   // .services__spoller-body
@@ -149,6 +165,7 @@
     color: var(--text-grey);
     font-size: toRem(16);
     line-height: 1.5;
+
     p {
       &:not(:last-child) {
         margin-bottom: toRem(20);

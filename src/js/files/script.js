@@ -357,49 +357,50 @@ if (spollersArray.length > 0) {
 
 // Counter ==================================================================================================================
 function numberItems(sectionSelector, itemsSelector, innerSelector, useParentheses = false, useDot = false) {
-    const section = document.querySelector(sectionSelector);
+    const sections = document.querySelectorAll(sectionSelector);
 
-    if (section) {
-        const items = section.querySelectorAll(itemsSelector);
+    if (sections.length > 0) {
+        sections.forEach((section) => {
+            const items = section.querySelectorAll(itemsSelector);
 
-        if (items.length > 0) {
-            items.forEach((item, index) => {
-                const numberElement = item.querySelector(innerSelector);
-                if (numberElement) {
-                    const number = index + 1;
-                    let formattedNumber = number.toString().padStart(2, '0');
+            if (items.length > 0) {
+                items.forEach((item, index) => {
+                    const numberElement = item.querySelector(innerSelector);
+                    if (numberElement) {
+                        const number = index + 1;
+                        let formattedNumber = number.toString().padStart(2, '0');
 
-                    if (useParentheses) {
-                        formattedNumber = `(${formattedNumber})`;
+                        if (useParentheses) {
+                            formattedNumber = `(${formattedNumber})`;
+                        }
+                        if (useDot) {
+                            formattedNumber = `${formattedNumber}.`;
+                        }
+
+                        numberElement.textContent = formattedNumber;
                     }
-                    if (useDot) {
-                        formattedNumber = `${formattedNumber}.`;
-                    }
-
-                    numberElement.textContent = formattedNumber;
-                }
-            });
-        }
+                });
+            }
+        });
     }
 }
 
 // Progress line ==================================================================================================================
-function initializeProgressTracking(containerSelector, progressLineSelector, options = {}) {
+function initializeProgressTracking(containerSelector, progressLineSelector, imageSelector, options = {}) {
     const container = document.querySelector(containerSelector);
     const progressLine = document.querySelector(progressLineSelector);
-    const steps = container.querySelectorAll('.company-start__step');
+    const images = document.querySelectorAll(`${imageSelector} img`);
+    const steps = container ? container.querySelectorAll('.company-start__step') : [];
 
-    if (!container || !progressLine || steps.length === 0) {
+    if (!container || !progressLine || images.length === 0 || steps.length === 0) {
         return;
     }
 
-    // Default options
     const defaultOptions = {
-        startOffset: 0.3, // Start progress when the container is 50% in view by default
-        endOffset: 0.6 // End progress when the container is fully scrolled out of view
+        startOffset: 0.3,
+        endOffset: 0.6
     };
 
-    // Merge default options with user-provided options
     const settings = {...defaultOptions, ...options};
 
     function updateProgress() {
@@ -408,7 +409,6 @@ function initializeProgressTracking(containerSelector, progressLineSelector, opt
         const containerHeight = containerRect.height;
         const windowHeight = window.innerHeight;
 
-        // Calculate the progress
         let progress;
         const startPoint = windowHeight * (1 - settings.startOffset);
         const endPoint = -containerHeight * settings.endOffset;
@@ -422,7 +422,21 @@ function initializeProgressTracking(containerSelector, progressLineSelector, opt
         }
 
         progressLine.style.setProperty('--progress', `${progress}%`);
+
+        const stepHeight = containerHeight / steps.length;
+        const currentStep = Math.min(Math.floor(progress / (100 / steps.length)), steps.length - 1);
+
+        images.forEach((img, index) => {
+            const wasShown = img.classList.contains('_show');
+            if (index === currentStep) {
+                img.classList.add('_show');
+            } else {
+                img.classList.remove('_show');
+            }
+        });
     }
+
+    images[0].classList.add('_show');
 
     window.addEventListener('scroll', updateProgress);
     window.addEventListener('resize', updateProgress);
@@ -443,8 +457,8 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     numberItems(
         '.workflow',
-        '.workflow__item',
-        '.workflow__number',
+        '.item-workflow',
+        '.item-workflow__number span',
         false,  // don't use parentheses
         true    // use dot
     );
@@ -462,6 +476,12 @@ document.addEventListener('DOMContentLoaded', () => {
         false,
         false
     );
-    initializeProgressTracking('.company-start__steps', '.company-start__progress-line');
-
+    numberItems(
+        '.body-spollers',
+        '.body-spollers__item',
+        '.body-spollers__number',
+        true,
+        false
+    );
+    initializeProgressTracking('.company-start', '.company-start__progress-line', '.start-company__img');
 });
