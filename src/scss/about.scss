@@ -86,6 +86,7 @@
     position: relative;
     border-top: 1px solid var(--dash-white);
     padding: toRem(32) toRem(20);
+    color: var(--blue);
     @media (max-width: $mobile) {
       padding: toRem(32) toRem(16);
     }
@@ -139,6 +140,30 @@
       }
     }
   }
+}
+
+.workflow__img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6.25rem;
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.workflow__img img {
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+  top: 0;
+  left: -200%;
+  opacity: 0;
+}
+
+.workflow__img img._show {
+  opacity: 1;
+  left: 0;
 }
 
 //==================================================================================================================
@@ -212,6 +237,7 @@
       top: 0;
       left: 0;
       z-index: 1;
+      cursor: pointer;
 
       &::before {
         content: "";

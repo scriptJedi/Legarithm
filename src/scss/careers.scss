@@ -29,6 +29,7 @@
       font-size: toRem(16);
       line-height: 1.5;
       color: var(--text-grey);
+      margin-top: toRem(20);
     }
 
     @media (max-width: $tablet) {
@@ -60,6 +61,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     h5 {
       font-size: toRem(28);
       line-height: 1.5;

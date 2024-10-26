@@ -8,7 +8,7 @@
 
   &._header-scroll {
     position: fixed;
-    top: -200%;
+    top: 0;
     background-color: #fff;
     border-bottom: 1px solid var(--dash-white);
 
@@ -24,6 +24,14 @@
   &._header-show {
     transition: top .3s ease 0s;
     top: 0;
+
+    .menu__item {
+      color: var(--text-dark);
+    }
+
+    .menu__item_submenu::before {
+      background-color: var(--blue)
+    }
   }
 
   &_alternative {

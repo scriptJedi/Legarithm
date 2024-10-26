@@ -1,7 +1,7 @@
 // Підключення функціоналу "Чертоги Фрілансера"
-import {bodyLock, bodyUnlock, isMobile, _slideUp, _slideDown, _slideToggle} from "./functions.js";
+import { bodyLock, bodyUnlock, isMobile, _slideUp, _slideDown, _slideToggle } from "./functions.js";
 // Підключення списку активних модулів
-import {flsModules} from "./modules.js";
+import { flsModules } from "./modules.js";
 
 // Menu ==================================================================================================================
 function initMenuFunctionality() {
@@ -239,21 +239,18 @@ function initLangSelector(selector) {
 // Footer spollers ==================================================================================================================
 const spollersArray = document.querySelectorAll('[data-spollers]');
 if (spollersArray.length > 0) {
-    // Получение обычных слойлеров
     const spollersRegular = Array.from(spollersArray).filter(function (item, index, self) {
         return !item.dataset.spollers.split(",")[0];
     });
-    // Инициализация обычных слойлеров
+
     if (spollersRegular.length > 0) {
         initSpollers(spollersRegular);
     }
 
-    // Получение слойлеров с медиа запросами
     const spollersMedia = Array.from(spollersArray).filter(function (item, index, self) {
         return item.dataset.spollers.split(",")[0];
     });
 
-    // Инициализация слойлеров с медиа запросами
     if (spollersMedia.length > 0) {
         const breakpointsArray = [];
         spollersMedia.forEach(item => {
@@ -266,7 +263,6 @@ if (spollersArray.length > 0) {
             breakpointsArray.push(breakpoint);
         });
 
-        // Получаем уникальные брейкпоинты
         let mediaQueries = breakpointsArray.map(function (item) {
             return '(' + item.type + "-width: " + item.value + "px)," + item.value + ',' + item.type;
         });
@@ -274,20 +270,18 @@ if (spollersArray.length > 0) {
             return self.indexOf(item) === index;
         });
 
-        // Работаем с каждым брейкпоинтом
         mediaQueries.forEach(breakpoint => {
             const paramsArray = breakpoint.split(",");
             const mediaBreakpoint = paramsArray[1];
             const mediaType = paramsArray[2];
             const matchMedia = window.matchMedia(paramsArray[0]);
 
-            // Объекты с нужными условиями
             const spollersArray = breakpointsArray.filter(function (item) {
                 if (item.value === mediaBreakpoint && item.type === mediaType) {
                     return true;
                 }
             });
-            // Событие
+
             matchMedia.addListener(function () {
                 initSpollers(spollersArray, matchMedia);
             });
@@ -295,7 +289,6 @@ if (spollersArray.length > 0) {
         });
     }
 
-    // Инициализация
     function initSpollers(spollersArray, matchMedia = false) {
         spollersArray.forEach(spollersBlock => {
             spollersBlock = matchMedia ? spollersBlock.item : spollersBlock;
@@ -311,7 +304,6 @@ if (spollersArray.length > 0) {
         });
     }
 
-    // Работа с контентом
     function initSpollerBody(spollersBlock, hideSpollerBody = true) {
         const spollerTitles = spollersBlock.querySelectorAll('[data-spoller]');
         if (spollerTitles.length > 0) {
@@ -388,20 +380,21 @@ function numberItems(sectionSelector, itemsSelector, innerSelector, useParenthes
 // Progress line ==================================================================================================================
 function initializeProgressTracking(containerSelector, progressLineSelector, imageSelector, options = {}) {
     const container = document.querySelector(containerSelector);
-    const progressLine = document.querySelector(progressLineSelector);
+    const progressLine = progressLineSelector ? document.querySelector(progressLineSelector) : null;
     const images = document.querySelectorAll(`${imageSelector} img`);
-    const steps = container ? container.querySelectorAll('.company-start__step') : [];
+    const steps = container ? container.querySelectorAll('.company-start__step, .workflow__item') : [];
 
-    if (!container || !progressLine || images.length === 0 || steps.length === 0) {
+    if (!container || images.length === 0 || steps.length === 0) {
         return;
     }
 
     const defaultOptions = {
         startOffset: 0.3,
-        endOffset: 0.6
+        endOffset: 0.6,
+        useProgressBar: !!progressLine
     };
 
-    const settings = {...defaultOptions, ...options};
+    const settings = { ...defaultOptions, ...options };
 
     function updateProgress() {
         const containerRect = container.getBoundingClientRect();
@@ -421,13 +414,14 @@ function initializeProgressTracking(containerSelector, progressLineSelector, ima
             progress = ((startPoint - containerTop) / (startPoint - endPoint)) * 100;
         }
 
-        progressLine.style.setProperty('--progress', `${progress}%`);
+        if (settings.useProgressBar && progressLine) {
+            progressLine.style.setProperty('--progress', `${progress}%`);
+        }
 
         const stepHeight = containerHeight / steps.length;
         const currentStep = Math.min(Math.floor(progress / (100 / steps.length)), steps.length - 1);
 
         images.forEach((img, index) => {
-            const wasShown = img.classList.contains('_show');
             if (index === currentStep) {
                 img.classList.add('_show');
             } else {
@@ -442,7 +436,91 @@ function initializeProgressTracking(containerSelector, progressLineSelector, ima
     window.addEventListener('resize', updateProgress);
     updateProgress();
 }
+// Expandable features functionality ========================================================================================================================================================
+function initExpandableFeatures(containerSelector, options = {}) {
+    const container = document.querySelector(containerSelector);
+    if (!container) return;
 
+    const defaultOptions = {
+        featureClass: 'why-legarithm__feature',
+        expandedContentClass: 'why-legarithm__expanded-content',
+        activeClass: 'active'
+    };
+
+    const {
+        featureClass,
+        expandedContentClass,
+        activeClass
+    } = { ...defaultOptions, ...options };
+
+    const features = container.querySelectorAll(`.${featureClass}`);
+    let activeFeature = null;
+
+    function expandFeature(feature) {
+        feature.classList.add(activeClass);
+        activeFeature = feature;
+    }
+
+    function collapseFeature(feature) {
+        feature.classList.remove(activeClass);
+        activeFeature = null;
+    }
+
+    function handleFeatureInteraction(feature) {
+        if (activeFeature === feature) {
+            collapseFeature(feature);
+        } else {
+            if (activeFeature) {
+                collapseFeature(activeFeature);
+            }
+            expandFeature(feature);
+        }
+    }
+
+    features.forEach(feature => {
+        if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+            feature.addEventListener('click', (e) => {
+                e.preventDefault();
+                handleFeatureInteraction(feature);
+            });
+        } else {
+            feature.addEventListener('mouseenter', () => {
+                if (activeFeature !== feature) {
+                    handleFeatureInteraction(feature);
+                }
+            });
+        }
+    });
+
+    // Collapse feature when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest(`.${featureClass}`) && activeFeature) {
+            collapseFeature(activeFeature);
+        }
+    });
+
+    // Add mouseleave event for desktop
+    if (!('ontouchstart' in window || navigator.maxTouchPoints > 0)) {
+        container.addEventListener('mouseleave', () => {
+            if (activeFeature) {
+                collapseFeature(activeFeature);
+            }
+        });
+    }
+}
+// Scroll arrow ========================================================================================================================================================
+function initScrollArrow() {
+    const scrollArrow = document.querySelector('[data-scroll-arrow]');
+    if (!scrollArrow) return;
+
+    scrollArrow.addEventListener('click', () => {
+        const sections = document.querySelectorAll('section');
+        if (sections.length > 1) {
+            const nextSection = sections[1];
+            nextSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+}
 // Initialization ===================================================================================================================
 document.addEventListener('DOMContentLoaded', () => {
     initMenuFunctionality();
@@ -459,8 +537,8 @@ document.addEventListener('DOMContentLoaded', () => {
         '.workflow',
         '.item-workflow',
         '.item-workflow__number span',
-        false,  // don't use parentheses
-        true    // use dot
+        false,
+        true
     );
     numberItems(
         '.requirements',
@@ -484,4 +562,12 @@ document.addEventListener('DOMContentLoaded', () => {
         false
     );
     initializeProgressTracking('.company-start', '.company-start__progress-line', '.start-company__img');
+    initializeProgressTracking('.workflow__wrapper', null, '.workflow__img');
+    initExpandableFeatures('.why-legarithm__features', {
+        featureClass: 'why-legarithm__feature',
+        expandedContentClass: 'why-legarithm__expanded-content',
+        activeClass: 'active'
+    });
+    initScrollArrow();
 });
+

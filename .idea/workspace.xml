@@ -6,26 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="96c0750c-87d4-4f5a-908b-686fc379d759" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cms.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cms.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_footer.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_footer.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_head.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_head.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/_header.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_header.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/start/01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/start/01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_popup.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_popup.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/files/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/files/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/sliders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/publications-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/publications-single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/about.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base/colors-palette.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/colors-palette.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/cms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/cms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/popup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/careers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/careers.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/platform.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/platform.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/publication-single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/publication-single.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,23 +39,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/aleksandr/dev/Work/Legarithm/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "editing.templates",
-    "ts.external.directory.path": "/Users/aleksandr/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/aleksandr/dev/Work/Legarithm/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/aleksandr/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -91,6 +87,9 @@
       <workItem from="1729063718423" duration="80000" />
       <workItem from="1729064004773" duration="6312000" />
       <workItem from="1729178325306" duration="12961000" />
+      <workItem from="1729192244068" duration="34000" />
+      <workItem from="1729263606021" duration="3986000" />
+      <workItem from="1729444452996" duration="2993000" />
     </task>
     <servers />
   </component>

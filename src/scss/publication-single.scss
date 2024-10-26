@@ -10,6 +10,11 @@
 
   // .publication__sidebar
   &__sidebar {
+    @media (min-width: $tablet) {
+      position: absolute;
+      height: 100%;
+      left: 100px;
+    }
 
     p {
       font-size: toRem(14);
@@ -50,6 +55,7 @@
   // .publication__article
   &__article {
     max-width: toEm(750);
+    margin: 0 auto;
 
     h1 {
       color: var(--text-primary);

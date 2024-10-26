@@ -42,6 +42,11 @@
                     </div>
                 </div>
             </div>
+            <a data-scroll-arrow data-ripple class="hero__scroll social-btn social-btn_blure">
+                <i class="material-symbols-outlined">
+                    arrow_downward
+                </i>
+            </a>
         </section>
         <section class="services-in section-padding">
             <div class="services-in__container">
@@ -51,59 +56,144 @@
                     </h2>
                 </div>
                 <div class="services-in__wrapper">
-                    <div data-tabs class="services-in__tabs tabs-services tabs row">
-                        <div data-tabs-body class="tabs-services__content tabs__content col-md-6">
+                    <div data-tabs class="services-in__tabs tabs-services tabs row aic">
+                        <div data-tabs-body class="tabs-services__content tabs__content col-lg-6">
                             <div class="tabs__body tabs-services__body">
-                                <img class="ibg" src="img/services/tabs1.jpeg" alt="">
+                                <img class="ibg" src="img/services/01.png" alt="">
                             </div>
                             <div class="tabs__body tabs-services__body">
-                                <img class="ibg" src="img/services/tabs2.jpeg" alt="">
+                                <img class="ibg" src="img/services/02.png" alt="">
                             </div>
                             <div class="tabs__body tabs-services__body">
-                                <img class="ibg" src="img/services/tabs3.jpeg" alt="">
+                                <img class="ibg" src="img/services/03.png" alt="">
+                            </div>
+                            <div class="tabs__body tabs-services__body">
+                                <img class="ibg" src="img/services/04.png" alt="">
+                            </div>
+                            <div class="tabs__body tabs-services__body">
+                                <img class="ibg" src="img/services/05.png" alt="">
                             </div>
                         </div>
-                        <nav data-tabs-titles class="tabs-services__navigation tabs__navigation col-md-6">
-                            <button type="button" class="tabs-services__title tabs__title _tab-active">
-                                <h3>
-                                    Save more time
-                                </h3>
-                                <p>
-                                    A single place where all the necessary information is collected, all the services
-                                    you ordered are available, and each stage is described in detail with a time frame.
-                                    You no longer need to flip through long correspondence to remember what has already
-                                    been done and what will happen next.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis!
-                                </p>
-                            </button>
-                            <button type="button" class="tabs-services__title tabs__title">
-                                <h3>
-                                    Track work progress
-                                </h3>
-                                <p>
-                                    Even if you urgently need to check something, you can log in to the app, where all
-                                    the information will be available. Even outside of our lawyers' working hours, you
-                                    have access to the data 24/7.
-                                </p>
-                            </button>
-                            <button type="button" class="tabs-services__title tabs__title">
-                                <h3>
-                                    Communications
-                                </h3>
-                                <p>
-                                    Each stage of the work has a place for comments, where you can leave your messages
-                                    or get answers from lawyers. This is especially useful when you have many processes
-                                    going on at the same time, as communication is clearly structured in this way. It is
-                                    not just a platform for tracking work
-                                </p>
-                            </button>
+                        <nav data-tabs-titles data-spollers data-one-spoller class="tabs-services__navigation tabs__navigation spollers col-lg-6">
+                            <details class="tabs-services__title tabs__title spollers__item _tab-active">
+                                <summary class="spollers__title">
+                                    <h3>
+                                        Company registration
+                                    </h3>
+                                    <i class="material-symbols-outlined">
+                                        arrow_downward_alt
+                                    </i>
+                                </summary>
+                                <div class="spollers__body">
+                                    <p>
+                                        A single place where all the necessary information is collected, all the services you ordered are available, and each stage is described in detail with a time frame. You no longer need to flip through long correspondence to remember what has already been done and what will happen next.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis!
+                                    </p>
+                                    <a data-ripple href="#"
+                                    class="tabs-services__btn btn btn_primary btn_m btn_w100">
+                                        Learn more
+                                        <i class="material-symbols-outlined">
+                                            north_east
+                                        </i>
+                                    </a>
+                                </div>
+                            </details>
+                            <details class="tabs-services__title tabs__title spollers__item">
+                                <summary class="spollers__title">
+                                    <h3>
+                                        Accounting support
+                                    </h3>
+                                    <i class="material-symbols-outlined">
+                                        arrow_downward_alt
+                                    </i>
+                                </summary>
+                                <div class="spollers__body">
+                                    <p>
+                                        Even if you urgently need to check something, you can log in to the app, where all the information will be available. Even outside of our lawyers' working hours, you have access to the data 24/7.
+                                    </p>
+                                    <a data-ripple href="#"
+                                    class="tabs-services__btn btn btn_primary btn_m btn_w100">
+                                        Learn more
+                                        <i class="material-symbols-outlined">
+                                            north_east
+                                        </i>
+                                    </a>
+                                </div>
+                            </details>
+                            <details class="tabs-services__title tabs__title spollers__item">
+                                <summary class="spollers__title">
+                                    <h3>
+                                        Citizienship & Migration
+                                    </h3>
+                                    <i class="material-symbols-outlined">
+                                        arrow_downward_alt
+                                    </i>
+                                </summary>
+                                <div class="spollers__body">
+                                    <p>
+                                        Each stage of the work has a place for comments, where you can leave your messages or get answers from lawyers. This is especially useful when you have many processes going on at the same time, as communication is clearly structured in this way. It is not just a platform for tracking work.
+                                    </p>
+                                    <a data-ripple href="#"
+                                    class="tabs-services__btn btn btn_primary btn_m btn_w100">
+                                        Learn more
+                                        <i class="material-symbols-outlined">
+                                            north_east
+                                        </i>
+                                    </a>
+                                </div>
+                            </details>
+                            <details class="tabs-services__title tabs__title spollers__item">
+                                <summary class="spollers__title">
+                                    <h3>
+                                        Company incorporation
+                                    </h3>
+                                    <i class="material-symbols-outlined">
+                                        arrow_downward_alt
+                                    </i>
+                                </summary>
+                                <div class="spollers__body">
+                                    <p>
+                                        Each stage of the work has a place for comments, where you can leave your messages or get answers from lawyers. This is especially useful when you have many processes going on at the same time, as communication is clearly structured in this way. It is not just a platform for tracking work.
+                                    </p>
+                                    <a data-ripple href="#"
+                                    class="tabs-services__btn btn btn_primary btn_m btn_w100">
+                                        Learn more
+                                        <i class="material-symbols-outlined">
+                                            north_east
+                                        </i>
+                                    </a>
+                                </div>
+                            </details>
+                            <details class="tabs-services__title tabs__title spollers__item">
+                                <summary class="spollers__title">
+                                    <h3>
+                                        Gambling license
+                                    </h3>
+                                    <i class="material-symbols-outlined">
+                                        arrow_downward_alt
+                                    </i>
+                                </summary>
+                                <div class="spollers__body">
+                                    <p>
+                                        Each stage of the work has a place for comments, where you can leave your messages or get answers from lawyers. This is especially useful when you have many processes going on at the same time, as communication is clearly structured in this way. It is not just a platform for tracking work.
+                                    </p>
+                                    <a data-ripple href="#"
+                                    class="tabs-services__btn btn btn_primary btn_m btn_w100">
+                                        Learn more
+                                        <i class="material-symbols-outlined">
+                                            north_east
+                                        </i>
+                                    </a>
+                                </div>
+                            </details>
                         </nav>
                     </div>
                 </div>
             </div>
         </section>
+        
         <section class="cta section-padding">
             <img src="img/cta/03.jpg" alt="" class="cta__bg ibg">
             <div class="cta__container">
@@ -228,8 +318,8 @@
                     <h2>
                         Our Platform
                     </h2>
-                    <a data-ripple data-da=".platform__container, 767.98" href="#"
-                       class="platform__btn  btn btn_primary btn_m btn_w100">
+                    <a data-ripple href="#"
+                       class="tabs-services__btn btn btn_primary btn_m btn_w100">
                         Log in
                         <i class="material-symbols-outlined">
                             north_east
