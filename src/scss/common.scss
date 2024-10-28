@@ -29,6 +29,13 @@ section {
 	position: relative;
 }
 
+.header_alternative + main {
+	margin-top: toRem(85);
+	@media (max-width: $tablet) {
+		margin-top: toRem(77);
+	}
+}
+
 ol {
 	counter-reset: item;
 	list-style: none;

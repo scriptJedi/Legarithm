@@ -480,11 +480,21 @@ function initExpandableFeatures(containerSelector, options = {}) {
     features.forEach(feature => {
         if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
             feature.addEventListener('click', (e) => {
-                e.preventDefault();
-                handleFeatureInteraction(feature);
+                if (e.target === feature) {
+                    e.preventDefault();
+                    handleFeatureInteraction(feature);
+                }
             });
         } else {
-            feature.addEventListener('mouseenter', () => {
+            // Знаходимо розширений контент
+            const expandedContent = feature.querySelector(`.${expandedContentClass}`);
+            
+            // Встановлюємо pointer-events: none для розширеного контенту
+            if (expandedContent) {
+                expandedContent.style.pointerEvents = 'none';
+            }
+
+            feature.addEventListener('mouseenter', (e) => {
                 if (activeFeature !== feature) {
                     handleFeatureInteraction(feature);
                 }
@@ -570,4 +580,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     initScrollArrow();
 });
-
